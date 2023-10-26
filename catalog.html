@@ -64,6 +64,7 @@
       </header>
 
       <!--секция фильтров-->
+      <h2 class="visually-hidden">Фильтры гостиниц</h2>
       <section class="filters-catalog">
         <form action="https://echo.htmlacademy.ru/" method="post">
           <!--чекбоксы инфраструктуры-->
@@ -136,7 +137,103 @@
 
       <!--секция каталога-->
       <section class="catalog-hotels">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <!--секция сортировки-->
+        <section class="catalog-sorting">
+          <p class="sorting-results">Найдено гостиниц: 38</p>
 
+          <select class="sorting-select" name="sorting-select" aria-label="Сортировка">
+            <option class="sorting-option" value="cheap">Сначала дешевые</option>
+            <option class="sorting-option" value="expensive">Сначала дорогие</option>
+            <option class="sorting-option" value="popular">Сначала популярные</option>
+          </select>
+
+          <ul class="catalog-display-list">
+            <li class="catalog-display-item">
+              <a href="#" class="button-all">
+                <span class="visually-hidden">Таблица</span>
+              </a>
+            </li>
+            <li class="catalog-display-item">
+              <a href="#" class="button-all">
+                <span class="visually-hidden">Слайдер</span>
+              </a>
+            </li>
+            <li class="catalog-display-item">
+              <a href="#" class="button-all">
+                <span class="visually-hidden">Список</span>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!--карточки гостиниц-->
+        <section class="hotels-cards">
+          <ul class="hotels-cards-list">
+            <li class="hotels-cards-item">
+              <img src="#" alt="пейзаж пещера">
+              <h3 class="hotel-card-heading">Amara Resort & Spa</h3>
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От 4000 ₽</p>
+              <a href="#" class="button-all hotel-card-link">подробнее</a>
+              <button class="button-all">в избранное</button>
+              <img src="#" alt="количество звезд">
+              <button class="button-all button-rating">Рейтинг: 8,5</button>
+            </li>
+            <li class="hotels-cards-item">
+              <img src="#" alt="пейзаж темная гора">
+              <h3 class="hotel-card-heading">Villas at Poco Diablo</h3>
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От 5000 ₽</p>
+              <a href="#" class="button-all hotel-card-link">подробнее</a>
+              <button class="button-all button-favourites">в избранном</button>
+              <img src="#" alt="количество звезд">
+              <button class="button-all button-rating">Рейтинг: 9,2</button>
+            </li>
+            <li class="hotels-cards-item">
+              <img src="#" alt="пейзаж светлая гора">
+              <h3 class="hotel-card-heading">Desert Quail Inn</h3>
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От 2500 ₽</p>
+              <a href="#" class="button-all hotel-card-link">подробнее</a>
+              <button class="button-all">в избранное</button>
+              <img src="#" alt="количество звезд">
+              <button class="button-all button-rating">Рейтинг: 6,9</button>
+            </li>
+            <li class="hotels-cards-item">
+              <img src="#" alt="пейзаж ночной">
+              <h3 class="hotel-card-heading">GreenTree Inn</h3>
+              <p class="hotel-type">Гостиница</p>
+              <p class="hotel-price">От 1500 ₽</p>
+              <a href="#" class="button-all hotel-card-link">подробнее</a>
+              <button class="button-all">в избранное</button>
+              <img src="#" alt="количество звезд">
+              <button class="button-all button-rating">Рейтинг: 5</button>
+            </li>
+          </ul>
+        </section>
+
+        <!--пагинация-->
+        <ul class="catalog-pagination-list">
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link button-all link-disabled">1</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#" class="catalog-pagination-link button-all">2</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#" class="catalog-pagination-link button-all">3</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#" class="catalog-pagination-link button-all">4</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a class="catalog-pagination-link button-all button-null">...</a>
+          </li>
+          <li class="catalog-pagination-item">
+            <a href="#" class="catalog-pagination-link button-all">10</a>
+          </li>
+        </ul>
       </section>
 
       <!--секция подписки-->
@@ -190,8 +287,6 @@
       </section>
 
     </footer>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
 
   </body>
 </html>
