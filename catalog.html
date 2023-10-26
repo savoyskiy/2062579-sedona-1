@@ -22,7 +22,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link current-page" href="#">Гостиницы</a>
           </li>
         </ul>
       </nav>
@@ -41,12 +41,116 @@
             </a>
           </li>
           <li class="menu-item">
-            <button class="button_all">Хочу сюда!</button>
+            <button class="button-all">Хочу сюда!</button>
           </li>
         </ul>
       </section>
-
     </header>
+
+    <main class="catalog-main">
+      <!--шапка страницы каталога-->
+      <header class="catalog-header">
+        <h1 class="catalog-heading">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs-list">
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="index.html">
+              <span class="visually-hidden">главная</span>
+            </a>
+          </li>
+          <li class="breadcrumbs-item">
+            <a class="breadcrumbs-link" href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </header>
+
+      <!--секция фильтров-->
+      <section class="filters-catalog">
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <!--чекбоксы инфраструктуры-->
+          <fieldset class="filters-catalog-group">
+            <legend class="filters-catalog-title">Инфраструктура:</legend>
+            <ul class="filters-catalog-list"> <!--так ли нужно оборачивать инпуты этой формы в список? делал как в примере с Барбершопом-->
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pond" checked>
+                  Бассейн
+                </label>
+              </li>
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+                  Парковка
+                </label>
+              </li>
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wifi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--радиокнопки типа жилья-->
+          <fieldset class="filters-catalog-group">
+            <legend class="filters-catalog-title">Тип жилья:</legend>
+            <ul class="filters-catalog-list"> <!--так ли нужно оборачивать инпуты этой формы в список? делал как в примере с Барбершопом-->
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
+                  Гостиница
+                </label>
+              </li>
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-type" value="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="filters-catalog-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-type" value="apartment">
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <!--диапазон цены-->
+          <fieldset class="filters-catalog-group">
+            <legend class="filters-catalog-title">Стоимость, ₽:</legend>
+            <label for="control">
+              <input class="control-input" type="text" placeholder="от" value="0">
+            </label>
+            <label for="control">
+              <input class="control-input" type="text" placeholder="до" value="9000">
+            </label>
+          </fieldset>
+
+          <!--отправка и сброс-->
+          <input type="submit" value="Применить" class="button-all button-filters">
+          <button type="submit" class="button-all button-filters button-reset">Сбросить</button>
+
+        </form>
+      </section>
+
+      <!--секция каталога-->
+      <section class="catalog-hotels">
+
+      </section>
+
+      <!--секция подписки-->
+      <section class="subscribe-catalog-page">
+        <h2 class="visually-hidden">Подписка на новости</h2>
+        <h3 class="subscribe-heading">Подпишитесь на рассылку</h3>
+        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="email" placeholder="Ваш e-mail" class="subscribe-form" name="subscribe-email">
+          <input type="submit" value="Подписаться" class="button-all button-subscribe">
+        </form>
+      </section>
+
+    </main>
 
     <footer class="page-footer">
       <!--ссылки на соцсети-->
