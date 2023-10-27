@@ -25,26 +25,24 @@
             <a class="navigation-link current-page" href="#">Гостиницы</a>
           </li>
         </ul>
-      </nav>
 
-      <!--пользовательское меню-->
-      <section class="user-menu">
-        <ul class="menu-list">
-          <li class="menu-item">
-            <a class="menu-link" href="#">
+        <!--пользовательское меню-->
+        <ul class="user-menu-list">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
               <span class="visually-hidden">поиск</span>
             </a>
           </li>
-          <li class="menu-item">
-            <a class="menu-link" href="#">
+          <li class="user-menu-item">
+            <a class="user-menu-link" href="#">
               <span class="visually-hidden">избранное</span>
             </a>
           </li>
-          <li class="menu-item">
-            <button class="button-all">Хочу сюда!</button>
+          <li class="user-menu-item">
+            <button type="button" class="button-all">Хочу сюда!</button>
           </li>
         </ul>
-      </section>
+      </nav>
     </header>
 
     <main class="catalog-main">
@@ -130,8 +128,8 @@
           </fieldset>
 
           <!--отправка и сброс-->
-          <input type="submit" value="Применить" class="button-all button-filters">
-          <button type="submit" class="button-all button-filters button-reset">Сбросить</button>
+          <button type="submit" class="button-all button-filters">Применить</button>
+          <button type="reset" class="button-all button-filters button-reset">Сбросить</button>
 
         </form>
       </section>
@@ -178,9 +176,9 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 4000 ₽</p>
               <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button class="button-all">в избранное</button>
+              <button type="button" class="button-all">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button class="button-all button-rating">Рейтинг: 8,5</button>
+              <button type="button" class="button-all button-rating">Рейтинг: 8,5</button>
             </li>
             <li class="hotels-cards-item">
               <img src="#" alt="пейзаж темная гора">
@@ -188,9 +186,9 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 5000 ₽</p>
               <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button class="button-all button-favourites">в избранном</button>
+              <button type="button" class="button-all button-favourites">в избранном</button>
               <img src="#" alt="количество звезд">
-              <button class="button-all button-rating">Рейтинг: 9,2</button>
+              <button type="button" class="button-all button-rating">Рейтинг: 9,2</button>
             </li>
             <li class="hotels-cards-item">
               <img src="#" alt="пейзаж светлая гора">
@@ -198,9 +196,9 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 2500 ₽</p>
               <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button class="button-all">в избранное</button>
+              <button type="button" class="button-all">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button class="button-all button-rating">Рейтинг: 6,9</button>
+              <button type="button" class="button-all button-rating">Рейтинг: 6,9</button>
             </li>
             <li class="hotels-cards-item">
               <img src="#" alt="пейзаж ночной">
@@ -208,9 +206,9 @@
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 1500 ₽</p>
               <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button class="button-all">в избранное</button>
+              <button type="button" class="button-all">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button class="button-all button-rating">Рейтинг: 5</button>
+              <button type="button" class="button-all button-rating">Рейтинг: 5</button>
             </li>
           </ul>
         </section>
@@ -239,7 +237,7 @@
       </section>
 
       <!--секция подписки-->
-      <section class="subscribe-catalog-page">
+      <aside class="subscribe-catalog-page">
         <h2 class="visually-hidden">Подписка на новости</h2>
         <h3 class="subscribe-heading">Подпишитесь на рассылку</h3>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -247,7 +245,7 @@
           <input type="email" placeholder="Ваш e-mail" class="subscribe-form" name="subscribe-email">
           <input type="submit" value="Подписаться" class="button-all button-subscribe">
         </form>
-      </section>
+      </aside>
 
     </main>
 
