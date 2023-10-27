@@ -66,6 +66,7 @@
       <!--секция фильтров-->
       <h2 class="visually-hidden">Фильтры гостиниц</h2>
       <section class="filters-catalog">
+        <h3 class="visually-hidden">Форма подбора гостиницы</h3>
         <form action="https://echo.htmlacademy.ru/" method="post">
           <!--чекбоксы инфраструктуры-->
           <fieldset class="filters-catalog-group">
@@ -120,10 +121,10 @@
           <!--диапазон цены-->
           <fieldset class="filters-catalog-group">
             <legend class="filters-catalog-title">Стоимость, ₽:</legend>
-            <label for="control">
+            <label class="control">
               <input class="control-input" type="text" placeholder="от" value="0">
             </label>
-            <label for="control">
+            <label class="control">
               <input class="control-input" type="text" placeholder="до" value="9000">
             </label>
           </fieldset>
@@ -140,6 +141,7 @@
         <h2 class="visually-hidden">Каталог гостиниц</h2>
         <!--секция сортировки-->
         <section class="catalog-sorting">
+          <h3 class="visually-hidden">Сортировка каталога</h3>
           <p class="sorting-results">Найдено гостиниц: 38</p>
 
           <select class="sorting-select" name="sorting-select" aria-label="Сортировка">
