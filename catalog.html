@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="user-menu-item">
-            <button type="button" class="button-all">Хочу сюда!</button>
+            <button class="button-all" type="button">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
@@ -69,7 +69,7 @@
           <!--чекбоксы инфраструктуры-->
           <fieldset class="filters-catalog-group">
             <legend class="filters-catalog-title">Инфраструктура:</legend>
-            <ul class="filters-catalog-list"> <!--так ли нужно оборачивать инпуты этой формы в список? делал как в примере с Барбершопом-->
+            <ul class="filters-catalog-list">
               <li class="filters-catalog-item">
                 <label class="control">
                   <input class="control-input" type="checkbox" name="pond" checked>
@@ -94,7 +94,7 @@
           <!--радиокнопки типа жилья-->
           <fieldset class="filters-catalog-group">
             <legend class="filters-catalog-title">Тип жилья:</legend>
-            <ul class="filters-catalog-list"> <!--так ли нужно оборачивать инпуты этой формы в список? делал как в примере с Барбершопом-->
+            <ul class="filters-catalog-list">
               <li class="filters-catalog-item">
                 <label class="control">
                   <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
@@ -128,8 +128,8 @@
           </fieldset>
 
           <!--отправка и сброс-->
-          <button type="submit" class="button-all button-filters">Применить</button>
-          <button type="reset" class="button-all button-filters button-reset">Сбросить</button>
+          <button class="button-all button-filters" type="submit">Применить</button>
+          <button class="button-all button-filters button-reset" type="reset">Сбросить</button>
 
         </form>
       </section>
@@ -150,17 +150,17 @@
 
           <ul class="catalog-display-list">
             <li class="catalog-display-item">
-              <a href="#" class="button-all">
+              <a class="button-all" href="#">
                 <span class="visually-hidden">Таблица</span>
               </a>
             </li>
             <li class="catalog-display-item">
-              <a href="#" class="button-all">
+              <a class="button-all" href="#">
                 <span class="visually-hidden">Слайдер</span>
               </a>
             </li>
             <li class="catalog-display-item">
-              <a href="#" class="button-all">
+              <a class="button-all" href="#">
                 <span class="visually-hidden">Список</span>
               </a>
             </li>
@@ -171,44 +171,52 @@
         <section class="hotels-cards">
           <ul class="hotels-cards-list">
             <li class="hotels-cards-item">
-              <img src="#" alt="пейзаж пещера">
-              <h3 class="hotel-card-heading">Amara Resort & Spa</h3>
+              <a class="hotels-cards-link" href="#">
+                <img src="#" alt="пейзаж пещера">
+                <h3 class="hotel-card-heading">Amara Resort & Spa</h3>
+              </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 4000 ₽</p>
-              <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button type="button" class="button-all">в избранное</button>
+              <a class="button-all hotel-card-link" href="#">подробнее</a>
+              <button class="button-all" type="button">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button type="button" class="button-all button-rating">Рейтинг: 8,5</button>
+              <button class="button-all button-rating" type="button">Рейтинг: 8,5</button>
             </li>
             <li class="hotels-cards-item">
-              <img src="#" alt="пейзаж темная гора">
-              <h3 class="hotel-card-heading">Villas at Poco Diablo</h3>
+              <a class="hotels-cards-link" href="#">
+                <img src="#" alt="пейзаж темная гора">
+                <h3 class="hotel-card-heading">Villas at Poco Diablo</h3>
+              </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 5000 ₽</p>
-              <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button type="button" class="button-all button-favourites">в избранном</button>
+              <a class="button-all hotel-card-link" href="#">подробнее</a>
+              <button class="button-all button-favourites" type="button">в избранном</button>
               <img src="#" alt="количество звезд">
-              <button type="button" class="button-all button-rating">Рейтинг: 9,2</button>
+              <button class="button-all button-rating" type="button">Рейтинг: 9,2</button>
             </li>
             <li class="hotels-cards-item">
-              <img src="#" alt="пейзаж светлая гора">
-              <h3 class="hotel-card-heading">Desert Quail Inn</h3>
+              <a class="hotels-cards-link" href="#">
+                <img src="#" alt="пейзаж светлая гора">
+                <h3 class="hotel-card-heading">Desert Quail Inn</h3>
+              </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 2500 ₽</p>
-              <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button type="button" class="button-all">в избранное</button>
+              <a class="button-all hotel-card-link" href="#">подробнее</a>
+              <button class="button-all" type="button">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button type="button" class="button-all button-rating">Рейтинг: 6,9</button>
+              <button class="button-all button-rating" type="button">Рейтинг: 6,9</button>
             </li>
             <li class="hotels-cards-item">
-              <img src="#" alt="пейзаж ночной">
-              <h3 class="hotel-card-heading">GreenTree Inn</h3>
+              <a class="hotels-cards-link" href="#">
+                <img src="#" alt="пейзаж ночной">
+                <h3 class="hotel-card-heading">GreenTree Inn</h3>
+              </a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price">От 1500 ₽</p>
-              <a href="#" class="button-all hotel-card-link">подробнее</a>
-              <button type="button" class="button-all">в избранное</button>
+              <a class="button-all hotel-card-link" href="#">подробнее</a>
+              <button class="button-all" type="button">в избранное</button>
               <img src="#" alt="количество звезд">
-              <button type="button" class="button-all button-rating">Рейтинг: 5</button>
+              <button class="button-all button-rating" type="button">Рейтинг: 5</button>
             </li>
           </ul>
         </section>
@@ -219,19 +227,19 @@
             <a class="catalog-pagination-link button-all link-disabled">1</a>
           </li>
           <li class="catalog-pagination-item">
-            <a href="#" class="catalog-pagination-link button-all">2</a>
+            <a class="catalog-pagination-link button-all" href="#">2</a>
           </li>
           <li class="catalog-pagination-item">
-            <a href="#" class="catalog-pagination-link button-all">3</a>
+            <a class="catalog-pagination-link button-all" href="#">3</a>
           </li>
           <li class="catalog-pagination-item">
-            <a href="#" class="catalog-pagination-link button-all">4</a>
+            <a class="catalog-pagination-link button-all" href="#">4</a>
           </li>
           <li class="catalog-pagination-item">
             <a class="catalog-pagination-link button-all button-null">...</a>
           </li>
           <li class="catalog-pagination-item">
-            <a href="#" class="catalog-pagination-link button-all">10</a>
+            <a class="catalog-pagination-link button-all" href="#">10</a>
           </li>
         </ul>
       </section>
@@ -242,8 +250,8 @@
         <h3 class="subscribe-heading">Подпишитесь на рассылку</h3>
         <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш e-mail" class="subscribe-form" name="subscribe-email">
-          <input type="submit" value="Подписаться" class="button-all button-subscribe">
+          <input class="subscribe-form" type="email" placeholder="Ваш e-mail" name="subscribe-email">
+          <button class="button-all button-subscribe" type="submit">Подписаться</button>
         </form>
       </aside>
 
