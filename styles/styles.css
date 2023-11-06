@@ -203,3 +203,199 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/*фоны и цвет текста*/
+/*хедер*/
+.page-header {
+  background-color: #ffffff;
+  color: #000000;
+}
+.navigation-link,
+.user-menu-link {
+  color: #000000;
+}
+.user-menu-button {
+  background-color: #756157;
+  color: #ffffff;
+}
+/*футер*/
+.page-footer {
+  background-color: #ffffff;
+  color: #000000;
+}
+.footer-telephone {
+  color: #000000;
+}
+
+/*главная страница*/
+/*шапака основного раздела*/
+.main-header {
+  background-color: #ffffff;
+}
+.background-images-wrapper {
+  background-color: #82B3D3;
+  background-image: url("../images/index-background.jpg");
+  background-repeat: no-repeat;
+}
+.background-images-bottom-wrapper {
+  background-image: url("../images/index-bottom-vector.svg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 485px;
+}
+.main-heading {
+  color: #000000;
+}
+.main-header-text {
+  color: #333333;
+}
+/*секция преимуществ*/
+.advantages-item {
+  background-color: rgba(131, 179, 211, 0.12);
+  color: #000000;
+}
+.advantages-item .advantages-text {
+  color: #333333;
+}
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.20);
+  color: #000000;
+}
+.advantages-item:first-child,
+.advantages-item:last-child {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+.advantages-item:first-child .advantages-text,
+.advantages-item:last-child .advantages-text {
+  color: #ffffff;
+}
+
+/*секция с приглашением*/
+.invite {
+  background-color: #ffffff;
+  color: #000000;
+}
+.invite-text {
+  color: #333333;
+}
+/*секция с рекомендациями*/
+.recomendation {
+  background-color: #ffffff;
+  color: #000000;
+}
+.recomendation-item:first-child,
+.recomendation-item:last-child {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.recomendation-text {
+  color: #333333;
+}
+
+/*секция поиска гостиницы*/
+.hotels {
+  background-color: #ffffff;
+  color: #000000;
+}
+.hotels-text {
+  color: #333333;
+}
+.hotels-search-button {
+  background-color: #756157;
+  color: #ffffff;
+}
+.button-subscribe {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+/*секция подписки*/
+.subscribe {
+  background-color: #82B3D3;
+  background-image: url("../images/Subscribe.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+/*страница каталога*/
+.catalog-main {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*шапка страницы каталога*/
+.catalog-header {
+  background-color: #82B3D3;
+  background-image: url("../images/Фильтр.jpg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.breadcrumbs-link {
+  color: #ffffff;
+}
+.button-filters {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+/*секция сортировки*/
+.sorting-select {
+  color: #333333;
+}
+/*карточки гостиниц*/
+.hotels-cards-link {
+  color: #000000;
+}
+.hotel-type,
+.hotel-price {
+  color: #333333;
+}
+.hotel-card-link {
+  background-color: #756157;
+  color: #ffffff;
+}
+.button-like {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+.button-favourites {
+  background-color: #7DB54F;
+}
+.button-rating {
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+/*пагинация*/
+.catalog-pagination-item {
+  background-color: #82B3D3;
+}
+.catalog-pagination-item:first-child {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+.catalog-pagination-item:nth-child(5) {
+  background-color: #ffffff;
+  color: #000000;
+}
+.catalog-pagination-item:nth-child(5) .catalog-pagination-link {
+  color: #000000;
+}
+.catalog-pagination-link {
+  color: #ffffff;
+}
+.link-disabled {
+  color: #000000;
+}
+
+/*блок подписки*/
+.subscribe-catalog-page {
+  background-color: #ffffff;
+  color: #000000;
+}
+.subscribe-text {
+  color: #333333;
+}
+.subscribe-form {
+  background-color: #F2F2F2;
+}
