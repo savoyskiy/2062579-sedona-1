@@ -2,7 +2,7 @@
   font-family: "PT Sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-style: normal;
-  font-weight: 400;
+
   font-display: swap;
 }
 @font-face {
@@ -11,4 +11,195 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+}
+/*текст хедера*/
+.navigation-link,
+.user-menu-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.user-menu-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/*телефон в футере*/
+.footer-telephone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/*стили текста для главной страницы*/
+/*текст шапки index*/
+.main-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.main-header-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+/*текст в преимуществах*/
+.advantages-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.advantages-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+/*текст в приглашении*/
+.invite-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.invite-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+/*текст в рекомендациях*/
+.recomendation-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.recomendation-text {
+  font-size: 18px;
+  line-height: 21px;
+}
+/*текст в поиске гостиниц*/
+.hotels-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.hotels-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+.hotels-search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+/*текст в блоке подписки*/
+.subscribe-heading {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+.button-subscribe {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.subscribe-form {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*стили текста для страницы каталога*/
+/*заголовок каталога*/
+.catalog-heading {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+/*breadcrumbs*/
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+}
+/*текст в фильтре*/
+.filters-catalog-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+.filters-catalog-item {
+  font-size: 18px;
+  line-height: 23px;
+}
+.control-input { /*уточнить по стилизации надписей в полях формы (value и placeholder)*/
+  font-size: 18px;
+  line-height: 24px;
+}
+.button-filters {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/*текст в сортировке*/
+.sorting-results {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.sorting-select,
+.sorting-option {
+  font-size: 18px;
+  line-height: 21px;
+}
+/*текст в карточках гостиниц*/
+.hotels-cards-link {
+  text-decoration: none;
+}
+.hotel-card-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+.hotel-type,
+.hotel-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+.hotel-card-link,
+.button-like {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.button-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+/*пагинация*/
+.catalog-pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
