@@ -228,7 +228,7 @@ body {
 }
 
 /*главная страница*/
-/*шапака основного раздела*/
+/*шапка основного раздела*/
 .main-header {
   background-color: #ffffff;
 }
@@ -238,7 +238,7 @@ body {
   background-repeat: no-repeat;
 }
 .background-images-bottom-wrapper {
-  background-image: url("../images/index-bottom-vector.svg");
+  background-image: url("../images/index-bottom-background.svg");
   background-repeat: no-repeat;
   background-position: left bottom;
   height: 485px;
@@ -312,12 +312,13 @@ body {
 /*секция подписки*/
 .subscribe {
   background-color: #82B3D3;
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 }
 
 /*страница каталога*/
+/*фон и текст по всей странице*/
 .catalog-main {
   background-color: #ffffff;
   color: #000000;
@@ -326,7 +327,7 @@ body {
 /*шапка страницы каталога*/
 .catalog-header {
   background-color: #82B3D3;
-  background-image: url("../images/Фильтр.jpg");
+  background-image: url("../images/catalog-filter-background.jpg");
   background-repeat: no-repeat;
   color: #ffffff;
 }
