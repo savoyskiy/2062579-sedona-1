@@ -15,6 +15,10 @@
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
 }
 /*текст хедера*/
 .navigation-link,
@@ -58,10 +62,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
-.advantages-text {
-  font-size: 18px;
-  line-height: 21px;
-}
+
 /*текст в приглашении*/
 .invite-heading {
   font-weight: 700;
@@ -80,10 +81,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
 }
-.recomendation-text {
-  font-size: 18px;
-  line-height: 21px;
-}
+
 /*текст в поиске гостиниц*/
 .hotels-heading {
   font-weight: 700;
@@ -144,11 +142,9 @@ body {
   text-transform: capitalize;
 }
 .filters-catalog-item {
-  font-size: 18px;
   line-height: 23px;
 }
 .control-input { /*уточнить по стилизации надписей в полях формы (value и placeholder)*/
-  font-size: 18px;
   line-height: 24px;
 }
 .button-filters {
@@ -164,11 +160,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
 }
-.sorting-select,
-.sorting-option {
-  font-size: 18px;
-  line-height: 21px;
-}
+
 /*текст в карточках гостиниц*/
 .hotels-cards-link {
   text-decoration: none;
@@ -178,11 +170,7 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
-.hotel-type,
-.hotel-price {
-  font-size: 18px;
-  line-height: 21px;
-}
+
 .hotel-card-link,
 .button-like {
   font-weight: 700;
@@ -208,7 +196,6 @@ body {
 /*хедер*/
 .page-header {
   background-color: #ffffff;
-  color: #000000;
 }
 .navigation-link,
 .user-menu-link {
@@ -221,7 +208,6 @@ body {
 /*футер*/
 .page-footer {
   background-color: #ffffff;
-  color: #000000;
 }
 .footer-telephone {
   color: #000000;
@@ -243,23 +229,18 @@ body {
   background-position: left bottom;
   height: 485px;
 }
-.main-heading {
-  color: #000000;
-}
 .main-header-text {
   color: #333333;
 }
 /*секция преимуществ*/
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.12);
-  color: #000000;
 }
 .advantages-item .advantages-text {
   color: #333333;
 }
 .advantages-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.20);
-  color: #000000;
 }
 .advantages-item:first-child,
 .advantages-item:last-child {
@@ -274,7 +255,6 @@ body {
 /*секция с приглашением*/
 .invite {
   background-color: #ffffff;
-  color: #000000;
 }
 .invite-text {
   color: #333333;
@@ -282,7 +262,6 @@ body {
 /*секция с рекомендациями*/
 .recomendation {
   background-color: #ffffff;
-  color: #000000;
 }
 .recomendation-item:first-child,
 .recomendation-item:last-child {
@@ -295,7 +274,6 @@ body {
 /*секция поиска гостиницы*/
 .hotels {
   background-color: #ffffff;
-  color: #000000;
 }
 .hotels-text {
   color: #333333;
@@ -321,7 +299,6 @@ body {
 /*фон и текст по всей странице*/
 .catalog-main {
   background-color: #ffffff;
-  color: #000000;
 }
 
 /*шапка страницы каталога*/
@@ -373,11 +350,9 @@ body {
 }
 .catalog-pagination-item:first-child {
   background-color: #F2F2F2;
-  color: #000000;
 }
 .catalog-pagination-item:nth-child(5) {
   background-color: #ffffff;
-  color: #000000;
 }
 .catalog-pagination-item:nth-child(5) .catalog-pagination-link {
   color: #000000;
@@ -392,7 +367,6 @@ body {
 /*блок подписки*/
 .subscribe-catalog-page {
   background-color: #ffffff;
-  color: #000000;
 }
 .subscribe-text {
   color: #333333;
