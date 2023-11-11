@@ -80,14 +80,9 @@ body {
 
 .background-images-wrapper {
   background-color: #82B3D3;
-  background-image: url("../images/index-background.jpg");
-  background-repeat: no-repeat;
-}
-
-.background-images-bottom-wrapper {
-  background-image: url("../images/index-bottom-background.svg");
-  background-repeat: no-repeat;
+  background-image: url("../images/index-bottom-background.svg"), url("../images/index-background.jpg");
   background-position: left bottom;
+  background-repeat: no-repeat;
   min-height: 485px;
 }
 
