@@ -32,6 +32,20 @@ body {
   background-color: #f2f2f2;
 }
 
+/*класс для скрытых элементов - пока поставил чтобы лучше видеть, что получается*/
+/*.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}*/
+
 /*хедер*/
 .page-header {
   background-color: #ffffff;
@@ -96,6 +110,9 @@ body {
 }
 
 .main-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
@@ -114,6 +131,8 @@ body {
 
 .background-images-wrapper {
   display: flex;
+  width: 100%;
+  margin-bottom: 69px;
   background-color: #82b3d3;
   background-image: url("../images/index-bottom-background.svg"),
     url("../images/index-background.jpg");
@@ -127,8 +146,15 @@ body {
 }
 
 /*секция преимуществ*/
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
 .advantages-item {
+  width: 400px;
   background-color: rgba(131, 179, 211, 0.12);
+  list-style-type: none;
 }
 
 .advantages-item .advantages-text {
@@ -140,6 +166,7 @@ body {
 }
 
 .advantages-item-edge {
+  width: 1200px;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -157,6 +184,9 @@ body {
 
 /*секция с приглашением*/
 .invite {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
@@ -174,8 +204,15 @@ body {
 }
 
 /*секция с рекомендациями*/
+.recomendation-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
 .recomendation-item {
+  width: 400px;
   background-color: #ffffff;
+  list-style-type: none;
 }
 
 .recomendation-item-odd {
@@ -195,6 +232,9 @@ body {
 
 /*секция поиска гостиниц*/
 .hotels {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
 
@@ -222,6 +262,9 @@ body {
 
 /*блок подписки*/
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #82b3d3;
   background-image: url("../images/index-subscribe-background.jpg");
   background-repeat: no-repeat;
