@@ -13,7 +13,17 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -25,6 +35,19 @@ body {
 /*хедер*/
 .page-header {
   background-color: #ffffff;
+  padding: 0 70px;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.header-logo {
+  margin-right: 30px;
+}
+
+.navigation-list {
+  flex-grow: 1;
 }
 
 .navigation-link,
@@ -48,7 +71,14 @@ body {
 
 /*футер*/
 .page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px;  /*паддинги по вертикали поменять потом, сейчас делаю только ширину*/
   background-color: #ffffff;
+}
+
+.footer-contact {
+  padding: 0 195px;
 }
 
 .footer-telephone {
@@ -61,6 +91,10 @@ body {
 
 /*стили текста для главной страницы*/
 /*шапка index*/
+.index-main {
+  flex-grow: 1;
+}
+
 .main-header {
   background-color: #ffffff;
 }
@@ -79,12 +113,17 @@ body {
 }
 
 .background-images-wrapper {
+  display: flex;
   background-color: #82b3d3;
   background-image: url("../images/index-bottom-background.svg"),
     url("../images/index-background.jpg");
   background-position: left bottom;
   background-repeat: no-repeat;
   min-height: 485px;
+}
+
+.background-images-wrapper img {
+  margin: 51px auto;
 }
 
 /*секция преимуществ*/
