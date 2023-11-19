@@ -63,7 +63,7 @@
         <!--секция фильтров-->
         <section class="filters-catalog">
           <h2 class="visually-hidden">Фильтры гостиниц</h2>
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filters-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
             <!--чекбоксы инфраструктуры-->
             <fieldset class="filters-catalog-group">
               <legend class="filters-catalog-title">Инфраструктура:</legend>
@@ -126,8 +126,10 @@
             </fieldset>
 
             <!--отправка и сброс-->
-            <button class="button-all button-filters" type="submit">Применить</button>
-            <button class="button-all button-filters button-reset" type="reset">Сбросить</button>
+            <div class="filters-button-wrapper">
+              <button class="button-all button-filters" type="submit">Применить</button>
+              <button class="button-all button-filters button-reset" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </header>

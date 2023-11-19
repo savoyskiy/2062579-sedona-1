@@ -107,6 +107,7 @@ body {
 /*шапка index*/
 .index-main {
   flex-grow: 1;
+  background-color: #ffffff;
 }
 
 .main-header {
@@ -302,17 +303,20 @@ body {
 /*стили для страницы каталога*/
 /*фон по всей странице*/
 .catalog-main {
+  flex-grow: 1;
   background-color: #ffffff;
 }
 
 /*шапка страницы каталога*/
 .catalog-heading {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .catalog-header {
+  padding: 35px 70px 70px;
   background-color: #82b3d3;
   background-image: url("../images/catalog-filter-background.jpg");
   background-repeat: no-repeat;
@@ -320,6 +324,10 @@ body {
 }
 
 /*breadcrumbs*/
+.breadcrumbs-list {
+  display: flex;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
@@ -328,6 +336,10 @@ body {
 }
 
 /*фильтр гостиниц*/
+.filters-catalog-form {
+  display: flex;
+}
+
 .filters-catalog-title {
   font-weight: 700;
   font-size: 20px;
@@ -358,7 +370,18 @@ body {
 }
 
 /*секция сортировки*/
+.catalog-sorting {
+  display: flex;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.sorting-results {
+  flex-grow: 1;
+}
+
 .sorting-select {
+  margin-right: 70px;
   color: #333333;
 }
 
@@ -370,6 +393,25 @@ body {
 }
 
 /*карточки гостиниц*/
+.hotels-cards {
+  padding: 70px;
+}
+
+.hotels-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+}
+
+.hotels-cards-item {
+  box-sizing: border-box;
+  width: 340px;
+  border: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+}
+
 .hotels-cards-link {
   text-decoration: none;
   color: #000000;
@@ -417,6 +459,11 @@ body {
 }
 
 /*пагинация*/
+.catalog-pagination-list {
+  display: flex;
+  margin: 0 70px;
+}
+
 .catalog-pagination-link {
   font-weight: 700;
   font-size: 20px;
@@ -427,7 +474,17 @@ body {
 }
 
 .catalog-pagination-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  margin-right: 8px;
   background-color: #82b3d3;
+}
+
+.catalog-pagination-item:last-child {
+  margin-right: 0;
 }
 
 .catalog-pagination-item:first-child {
@@ -448,5 +505,8 @@ body {
 
 /*блок подписки на странице каталога*/
 .subscribe-catalog-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #ffffff;
 }
