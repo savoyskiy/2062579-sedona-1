@@ -50,35 +50,34 @@ body {
 /*хедер*/
 .page-header {
   padding: 0 70px;
+  margin-bottom: -6px; /*т.к. логотип по высоте 70px он расталкивает хедер по высоте, а если жестко задать heigt: 64px, то не будет работать flex-wrap при переполнении навигации*/
   background-color: #ffffff;
 }
 
 .site-navigation {
   display: flex;
-  flex-wrap: wrap;
-  height: 64px;
+  align-items: flex-start;
 }
 
 .header-logo {
+  display: block;
   margin-right: 30px;
+  width: 140px;
+  height: 70px; /*задал высоту, потому что без нее логотип вырастает до 74px по высоте. Почему?*/
+  z-index: 1;
 }
 
 .navigation-list {
-  flex-grow: 1;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto 0 0; /*вместо flex-grow: 1*/
   list-style-type: none;
 }
 
-.navigation-item {
+.navigation-link {
   padding: 20px 16px;
-}
-
-.user-menu-item {
-  padding: 22px 12px;
 }
 
 .user-menu-list {
@@ -90,14 +89,21 @@ body {
   list-style-type: none;
 }
 
-.navigation-link,
-.user-menu-link {
+.navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
   text-decoration: none;
   color: #000000;
+}
+
+.user-menu-link {
+  display: block;
+  padding: 22px 12px;
+  min-height: 20px;
+  min-width: 20px;
 }
 
 .user-menu-button {
