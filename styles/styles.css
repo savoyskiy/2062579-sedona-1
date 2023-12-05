@@ -53,6 +53,7 @@ body {
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 /*хедер*/
@@ -110,6 +111,8 @@ body {
 }
 
 .user-menu-button {
+  width: 160px;
+  padding: 8px 0;
   margin-left: 20px;
   font-weight: 700;
   font-size: 16px;
@@ -132,13 +135,24 @@ body {
 .social-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-width: 142px;
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
 .social-item {
-  padding: 0 10px;
+  flex-grow: 1;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  min-width: 27px;
 }
 
 .footer-contact {
@@ -628,7 +642,7 @@ body {
   flex-direction: column;
   width: 340px;
   box-sizing: border-box;
-  padding: 19px 19px;
+  padding: 19px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
 }
@@ -680,6 +694,7 @@ body {
 
 .button-like {
   background-color: #82b3d3;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .hotel-card-rating {
