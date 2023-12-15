@@ -642,7 +642,7 @@ body {
 .hotels-cards-item {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: auto 21px 36px 37px;
   gap: 16px 20px;
   justify-content: space-between;
   width: 340px;
@@ -662,6 +662,8 @@ body {
 
 .hotel-card-image {
   margin-bottom: 16px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .hotel-card-heading {
