@@ -169,6 +169,10 @@ body {
   color: #000000;
 }
 
+.htmlacademy-link img {
+  display: block;
+}
+
 /*стили текста для главной страницы*/
 /*шапка index*/
 .index-main {
