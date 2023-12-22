@@ -161,11 +161,6 @@ body {
   color: #ffffff;
 }
 
-.user-menu-button:link,
-.user-menu-button:visited {
-  background-color: #756157;
-}
-
 .user-menu-button:hover,
 .user-menu-button:focus-visible {
   background-color: #615048;
@@ -552,6 +547,16 @@ body {
   color: #ffffff;
 }
 
+.hotels-search-button:hover,
+.hotels-search-button:focus-visible {
+  background-color: #615048;
+}
+
+.hotels-search-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
 /*блок подписки*/
 .subscribe {
   display: flex;
@@ -591,6 +596,16 @@ body {
   text-transform: uppercase;
   background-color: #82b3d3;
   color: #ffffff;
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus-visible {
+  background-color: #68a2ca;
+}
+
+.button-subscribe:active {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .subscribe-form {
