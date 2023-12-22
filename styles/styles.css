@@ -270,6 +270,25 @@ body {
   list-style-type: none;
 }
 
+.advantages-item-inner-text-wrapper {
+  position: relative;
+}
+
+.advantages-item-inner-text-wrapper::before {
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+  content: "";
+}
+
+.advantages-item-edge-text .advantages-item-inner-text-wrapper::before {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
 .advantages-item-edge {
   grid-column: 1 / -1;
   display: flex;
