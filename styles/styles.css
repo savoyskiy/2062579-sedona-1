@@ -180,6 +180,20 @@ body {
   fill: #82b3d3;
 }
 
+.social-link:link,
+.social-link:visited {
+  fill: #82b3d3;
+}
+
+.social-link:hover path,
+.social-link:focus-visible path {
+  fill: #68a2ca;
+}
+
+.social-link:active {
+  fill-opacity: 0.3;
+}
+
 .footer-contact {
   padding: 5px 195px;
 }
@@ -192,12 +206,37 @@ body {
   color: #000000;
 }
 
+.footer-telephone:link,
+.footer-telephone:visited {
+  color: #000000;
+}
+
+.footer-telephone:hover,
+.footer-telephone:focus-visible {
+  color: #756157;
+}
+
+.footer-telephone:active {
+  opacity: 0.3;
+}
+
 .footer-htmlacademy {
   padding-top: 8px;
 }
 
-.htmlacademy-link img {
-  display: block;
+.htmlacademy-link:link,
+.htmlacademy-link:visited {
+  fill: #000000;
+}
+
+.htmlacademy-link:hover path,
+.htmlacademy-link:focus-visible path {
+  fill: #756157;
+}
+
+.htmlacademy-link:active {
+  fill: #756157;
+  fill-opacity: 0.3;
 }
 
 /*стили текста для главной страницы*/
