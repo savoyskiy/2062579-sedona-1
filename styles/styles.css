@@ -384,11 +384,12 @@ body {
 
 .recomendation-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   width: 400px;
   min-height: 385px;
-  padding: 79px 85px;
+  padding: 183px 85px 79px;
   box-sizing: border-box;
   text-align: center;
   background-color: #ffffff;
@@ -399,9 +400,26 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.recomendation-item img {
-  order: -1;
-  margin-bottom: 30px;
+.recomendation-item::before {
+  position: absolute;
+  top: 81px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+}
+
+.recomendation-icon-home.recomendation-item::before {
+  content: url("../images/recomendation-icon-home.svg");
+}
+
+.recomendation-icon-food.recomendation-item::before {
+  content: url("../images/recomendation-icon-burger.svg");
+}
+
+.recomendation-icon-gift.recomendation-item::before {
+  top: 79px;
+  content: url("../images/recomendation-icon-gift.svg");
 }
 
 .recomendation-text {
