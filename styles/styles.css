@@ -164,8 +164,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   min-height: 40px;
   min-width: 27px;
+}
+
+.social-link-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #82b3d3;
 }
 
 .footer-contact {
