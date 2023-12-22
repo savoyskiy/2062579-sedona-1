@@ -378,6 +378,7 @@ body {
 .recomendation-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -406,7 +407,6 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  content: "";
 }
 
 .recomendation-icon-home.recomendation-item::before {
@@ -551,15 +551,25 @@ body {
 }
 
 .breadcrumbs-item {
-  margin-right: 10px;
+  position: relative;
+  margin-right: 28px;
 }
 
 .breadcrumbs-item:last-child {
   margin-right: 0;
 }
 
-.breadcrumbs-item-divider {
-  width: 8px;
+.breadcrumbs-item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 23px;
+  content: url("../images/breadcrumbs-divider.svg");
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-link {
@@ -569,6 +579,8 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+
 
 /*фильтр гостиниц*/
 .filters-catalog-form {
