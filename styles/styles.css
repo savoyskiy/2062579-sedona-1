@@ -85,15 +85,6 @@ body {
   list-style-type: none;
 }
 
-.user-menu-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
 .navigation-link {
   display: block;
   padding: 20px 16px;
@@ -105,12 +96,47 @@ body {
   color: #000000;
 }
 
+.current-page {
+  text-decoration: underline #756257;
+  text-underline-offset: 24px;
+}
+
+.user-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .user-menu-link {
   display: block;
   position: relative;
   padding: 22px 12px;
   min-height: 20px;
   min-width: 20px;
+}
+
+.like-number .user-menu-link::before {
+  position: absolute;
+  display: inline-block;
+  top: 11px;
+  right: 0;
+  left: 20px;
+  bottom: 0;
+  width: 20px;
+  height: 20px;
+  padding-top: 6px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #7db54f;
+  content: "12";
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  z-index: 1;
 }
 
 .user-menu-icon {
@@ -133,6 +159,21 @@ body {
   text-transform: uppercase;
   background-color: #756157;
   color: #ffffff;
+}
+
+.user-menu-button:link,
+.user-menu-button:visited {
+  background-color: #756157;
+}
+
+.user-menu-button:hover,
+.user-menu-button:focus-visible {
+  background-color: #615048;
+}
+
+.user-menu-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 /*футер*/
@@ -190,7 +231,8 @@ body {
   fill: #68a2ca;
 }
 
-.social-link:active {
+.social-link:active path {
+  fill: #68a2ca;
   fill-opacity: 0.3;
 }
 
@@ -217,6 +259,7 @@ body {
 }
 
 .footer-telephone:active {
+  color: #756157;
   opacity: 0.3;
 }
 
