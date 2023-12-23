@@ -948,10 +948,38 @@ body {
   text-decoration: none;
 }
 
+.hotel-card-link:link,
+.hotel-card-link:visited {
+  background-color: #756157;
+  color: #ffffff;
+}
+
+.hotel-card-link:hover,
+.hotel-card-link:focus {
+  outline: none;
+  background-color: #615048;
+}
+
+.hotel-card-link:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
 .button-like {
   background-color: #82b3d3;
   font-family: "PT Sans", "Arial", sans-serif;
   cursor: pointer;
+}
+
+.button-like:hover:not(.button-favourites),
+.button-like:focus:not(.button-favourites) {
+  outline: none;
+  background-color: #68a2ca;
+}
+
+.button-like:active:not(.button-favourites) {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .rating-stars {
@@ -984,6 +1012,17 @@ body {
 
 .button-favourites {
   background-color: #7db54f;
+}
+
+.button-favourites:hover,
+.button-favourites:focus {
+  outline: none;
+  background-color: #6c9e42;
+}
+
+.button-favourites:active {
+  background-color: #7db54f;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 /*пагинация*/
