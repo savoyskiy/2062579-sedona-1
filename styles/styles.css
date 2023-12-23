@@ -671,9 +671,8 @@ body {
 .breadcrumbs-item::after {
   position: absolute;
   top: 0;
-  right: 0;
+  right: -19px;
   bottom: 0;
-  left: 23px;
   content: url("../images/breadcrumbs-divider.svg");
 }
 
@@ -686,6 +685,34 @@ body {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+  color: #ffffff;
+}
+
+.breadcrumbs-link:link,
+.breadcrumbs-link:visited {
+  color: #ffffff;
+}
+
+.breadcrumbs-link:hover,
+.breadcrumbs-link:hover path  {
+  color: rgba(255, 255, 255, 0.60);
+  fill: rgba(255, 255, 255, 0.60);
+}
+
+.breadcrumbs-link:focus,
+.breadcrumbs-link:focus path {
+  color: #ffffff;
+  fill: #ffffff;
+  outline: none;
+}
+
+.breadcrumbs-link:active,
+.breadcrumbs-link:active path {
+  color: rgba(255, 255, 255, 0.30);
+  fill: rgba(255, 255, 255, 0.30);
+}
+
+.breadcrumbs-item:last-child .breadcrumbs-link {
   color: #ffffff;
 }
 
