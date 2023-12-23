@@ -96,6 +96,25 @@ body {
   color: #000000;
 }
 
+.navigation-link:link:not(.current-page),
+.navigation-link:visited:not(.current-page) {
+  color: #000000;
+}
+
+.navigation-link:hover:not(.current-page) {
+  color: #68a2ca;
+}
+
+.header-logo:focus,
+.navigation-link:focus:not(.current-page) {
+  color: #68a2ca;
+  outline-color: #68a2ca;
+}
+
+.navigation-link:active:not(.current-page) {
+  opacity: 0.3;
+}
+
 .current-page {
   text-decoration: underline #756257;
   text-underline-offset: 24px;
@@ -139,6 +158,28 @@ body {
   z-index: 1;
 }
 
+.user-menu-link:link path,
+.user-menu-link:visited path {
+  fill: #000000;
+}
+
+.user-menu-link:hover path,
+.user-menu-link:focus path {
+  fill: #68a2ca;
+}
+
+.user-menu-link:active path {
+  fill: #82b3d3;
+}
+
+.user-menu-link:focus{
+  outline-color: #68a2ca;
+}
+
+.user-menu-link:active {
+  opacity: 0.3;
+}
+
 .user-menu-icon {
   position: absolute;
   top: 0;
@@ -170,6 +211,10 @@ body {
 .user-menu-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.30);
+}
+
+.user-menu-button:disabled {
+  background-color: #e5e5e5;
 }
 
 /*футер*/
@@ -567,6 +612,10 @@ body {
   color: rgba(255, 255, 255, 0.30);
 }
 
+.hotels-search-button:disabled {
+  background-color: #e5e5e5;
+}
+
 /*блок подписки*/
 .subscribe {
   display: flex;
@@ -622,6 +671,10 @@ body {
 .button-subscribe:active {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.30);
+}
+
+.button-subscribe:disabled {
+  background-color: #e5e5e5;
 }
 
 .subscribe-input {
@@ -796,6 +849,10 @@ body {
   color: rgba(255, 255, 255, 0.30);
 }
 
+.button-filters:disabled {
+  background-color: #e5e5e5;
+}
+
 .button-reset {
   margin-bottom: 0;
   box-sizing: border-box;
@@ -823,6 +880,10 @@ body {
 
 .button-reset:active {
   color: rgba(255, 255, 255, 0.30);
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
 }
 
 .catalog-hotels-wrapper {
@@ -868,6 +929,15 @@ body {
 .sorting-select:focus {
   border-color: #68a2ca;
   outline: none;
+}
+
+.sorting-select:focus-within {
+  border-color: #3f5e72;
+}
+
+.sorting-select:disabled {
+  border-color: rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.30);
 }
 
 .sorting-results {
@@ -963,6 +1033,24 @@ body {
   color: #000000;
 }
 
+.hotels-cards-link:link,
+.hotels-cards-link:visited {
+  color: #000000;
+}
+
+.hotels-cards-link:hover {
+  color: #68a2ca;
+}
+
+.hotels-cards-link:focus {
+  color: #68a2ca;
+  outline-color: #68a2ca;
+}
+
+.hotels-cards-link:active {
+  color: rgba(0, 0, 0, 0.30);
+}
+
 .hotel-card-image {
   margin-bottom: 16px;
   object-fit: cover;
@@ -1019,6 +1107,10 @@ body {
   color: rgba(255, 255, 255, 0.30);
 }
 
+.hotel-card-link.disabled-link {
+  background-color: #e5e5e5;
+}
+
 .button-like {
   background-color: #82b3d3;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -1034,6 +1126,10 @@ body {
 .button-like:active:not(.button-favourites) {
   background-color: #82b3d3;
   color: rgba(255, 255, 255, 0.30);
+}
+
+.button-like:disabled:not(.button-favourites) {
+  background-color: #e5e5e5;
 }
 
 .rating-stars {
@@ -1107,6 +1203,10 @@ body {
 .button-favourites:active {
   background-color: #7db54f;
   color: rgba(255, 255, 255, 0.30);
+}
+
+.button-favourites:disabled {
+  background-color: #e5e5e5;
 }
 
 /*пагинация*/
