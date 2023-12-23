@@ -1014,6 +1014,36 @@ body {
   width: 140px;
 }
 
+.one-star {
+  background-image: url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+}
+
+.two-stars {
+  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px;
+}
+
+.three-stars {
+  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px;
+}
+
+.four-stars {
+  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+.five-stars {
+  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px, 106px 10px;
+}
+
 .button-rating {
   font-size: 16px;
   line-height: 20px;
