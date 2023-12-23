@@ -162,8 +162,9 @@ body {
 }
 
 .user-menu-button:hover,
-.user-menu-button:focus-visible {
+.user-menu-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .user-menu-button:active {
@@ -221,8 +222,11 @@ body {
   fill: #82b3d3;
 }
 
+.social-link:focus {
+  outline: none;
+}
 .social-link:hover path,
-.social-link:focus-visible path {
+.social-link:focus path {
   fill: #68a2ca;
 }
 
@@ -249,8 +253,9 @@ body {
 }
 
 .footer-telephone:hover,
-.footer-telephone:focus-visible {
+.footer-telephone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-telephone:active {
@@ -267,8 +272,12 @@ body {
   fill: #000000;
 }
 
+.htmlacademy-link:focus {
+  outline: none;
+}
+
 .htmlacademy-link:hover path,
-.htmlacademy-link:focus-visible path {
+.htmlacademy-link:focus path {
   fill: #756157;
 }
 
@@ -548,8 +557,9 @@ body {
 }
 
 .hotels-search-button:hover,
-.hotels-search-button:focus-visible {
+.hotels-search-button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .hotels-search-button:active {
@@ -599,8 +609,9 @@ body {
 }
 
 .button-subscribe:hover,
-.button-subscribe:focus-visible {
+.button-subscribe:focus {
   background-color: #68a2ca;
+  outline: none;
 }
 
 .button-subscribe:active {
@@ -803,6 +814,19 @@ body {
   border: 2px solid #e5e5e5;
 }
 
+.catalog-display-button:hover {
+  border-color: #000000;
+}
+
+.catalog-display-button:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.catalog-display-button:active {
+  border-color: #000000;
+}
+
 .catalog-display-current {
   border-color: #000000;
 }
@@ -947,12 +971,26 @@ body {
   align-items: center;
   width: 60px;
   height: 60px;
+  box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+}
+
+.catalog-pagination-item .catalog-pagination-link:hover:not(.link-disabled):not(.button-null),
+.catalog-pagination-item .catalog-pagination-link:focus:not(.link-disabled):not(.button-null) {
+  background-color: #68a2ca;
+  border: 1px solid #82b3d3;
+  border-radius: 4px;
+  outline: none;
+}
+
+.catalog-pagination-item .catalog-pagination-link:active:not(.link-disabled):not(.button-null) {
+  background-color: #82b3d3;
+  color: rgba(255, 255, 255, 0.30);
 }
 
 .catalog-pagination-item {
