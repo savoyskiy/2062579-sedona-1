@@ -126,12 +126,19 @@
             <!--диапазон цены-->
             <fieldset class="filters-catalog-group filters-catalog-group-price">
               <legend class="filters-catalog-title">Стоимость, ₽:</legend>
-              <label class="filters-catalog-control">
-                <input class="control-input" type="text" placeholder="от" value="0">
-              </label>
-              <label class="filters-catalog-control">
-                <input class="control-input" type="text" placeholder="до" value="9000">
-              </label>
+              <div class="price-textfield-wrapper">
+                <label for="price-start" class="filters-catalog-control"></label>
+                <input class="control-input text-field" id="price-start" type="text" placeholder="от" value="0">
+                <label for="price-end" class="filters-catalog-control"></label>
+                <input class="control-input text-field" id="price-end" type="text" placeholder="до" value="9000">
+              </div>
+              <!--слайдер цены-->
+              <div class="price-range-slider">
+                <div class="price-min-max" style="left: 0; width: 226px;">
+                  <button class="price-toggle price-min" type="button"></button>
+                  <button class="price-toggle price-max" type="button"></button>
+                </div>
+              </div>
             </fieldset>
 
             <!--отправка и сброс-->
@@ -233,7 +240,7 @@
                 <a class="hotel-card-link" href="#">подробнее</a>
                 <button class="button-like" type="button">в избранное</button>
                 <div class="rating-stars two-stars"></div>
-                <p class="button-rating">Рейтинг: 5</p>
+                <p class="button-rating">Рейтинг: 5,0</p>
             </li>
           </ul>
         </section>
