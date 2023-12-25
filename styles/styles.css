@@ -54,6 +54,7 @@ body {
   box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
   cursor: pointer;
+  user-select: none;
 }
 
 /*хедер*/
@@ -69,10 +70,10 @@ body {
 }
 
 .header-logo {
-  position: absolute;
-  margin-right: 30px;
+  position: relative;
+  margin-right: 28px;
+  margin-bottom: -6px;
   line-height: 0;
-  z-index: 1;
 }
 
 .navigation-list {
@@ -80,7 +81,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   max-width: 620px;
-  padding: 0 0 0 168px;
+  padding: 0;
   margin: 0 auto 0 0;
   list-style-type: none;
 }
@@ -137,20 +138,17 @@ body {
   min-width: 20px;
 }
 
-.like-number .user-menu-link::before {
+.like-number .user-menu-like {
   position: absolute;
   display: inline-block;
   top: 11px;
-  right: 0;
   left: 20px;
-  bottom: 0;
   width: 20px;
   height: 20px;
   padding-top: 6px;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: #7db54f;
-  content: "12";
   color: #ffffff;
   font-size: 10px;
   line-height: 10px;
@@ -533,25 +531,22 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.recomendation-item::before {
-  position: absolute;
-  top: 81px;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.recomendation-icon-home {
+  background-image: url("../images/recomendation-icon-home.svg");
+  background-position: center 81px;
+  background-repeat: no-repeat;
 }
 
-.recomendation-icon-home.recomendation-item::before {
-  content: url("../images/recomendation-icon-home.svg");
+.recomendation-icon-food {
+  background-image: url("../images/recomendation-icon-burger.svg");
+  background-position: center 81px;
+  background-repeat: no-repeat;
 }
 
-.recomendation-icon-food.recomendation-item::before {
-  content: url("../images/recomendation-icon-burger.svg");
-}
-
-.recomendation-icon-gift.recomendation-item::before {
-  top: 79px;
-  content: url("../images/recomendation-icon-gift.svg");
+.recomendation-icon-gift {
+  background-image: url("../images/recomendation-icon-gift.svg");
+  background-position: center 79px;
+  background-repeat: no-repeat;
 }
 
 .recomendation-text {
@@ -1082,6 +1077,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
+  user-select: none;
 }
 
 .hotel-card-link {
@@ -1133,38 +1129,31 @@ body {
 }
 
 .rating-stars {
-  min-height: 37px;
+  height: 37px;
   width: 140px;
+  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px, 96px 10px;
 }
 
 .one-star {
-  background-image: url("../images/rating-star.svg");
-  background-repeat: no-repeat;
-  background-position: 0 10px;
+  width: 24px;
 }
 
 .two-stars {
-  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg");
-  background-repeat: no-repeat;
-  background-position: 0 10px, 24px 10px;
+  width: 48px;
 }
 
 .three-stars {
-  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
-  background-repeat: no-repeat;
-  background-position: 0 10px, 24px 10px, 48px 10px;
+  width: 72px;
 }
 
 .four-stars {
-  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
-  background-repeat: no-repeat;
-  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+  width: 96px;
 }
 
 .five-stars {
-  background-image: url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg"), url("../images/rating-star.svg");
-  background-repeat: no-repeat;
-  background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px, 106px 10px;
+  width: 120px;
 }
 
 .button-rating {
