@@ -78,20 +78,23 @@
               <legend class="filters-catalog-title">Инфраструктура:</legend>
               <ul class="filters-catalog-list">
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="pond" checked>
+                  <label class="control-checkbox">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="pond" checked>
+                    <span class="control-checkbox-alt"></span>
                     Бассейн
                   </label>
                 </li>
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                  <label class="control-checkbox">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="parking" checked>
+                    <span class="control-checkbox-alt"></span>
                     Парковка
                   </label>
                 </li>
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="checkbox" name="wifi">
+                  <label class="control-checkbox">
+                    <input class="control-input-checkbox visually-hidden" type="checkbox" name="wifi">
+                    <span class="control-checkbox-alt"></span>
                     Wi-Fi
                   </label>
                 </li>
@@ -103,20 +106,23 @@
               <legend class="filters-catalog-title">Тип жилья:</legend>
               <ul class="filters-catalog-list">
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="hotel-type" value="hotel" checked>
+                  <label class="control-checkbox">
+                    <input class="control-input-radio visually-hidden" type="radio" name="hotel-type" value="hotel" checked>
+                    <span class="control-radio-alt"></span>
                     Гостиница
                   </label>
                 </li>
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="hotel-type" value="motel">
+                  <label class="control-checkbox">
+                    <input class="control-input-radio visually-hidden" type="radio" name="hotel-type" value="motel">
+                    <span class="control-radio-alt"></span>
                     Мотель
                   </label>
                 </li>
                 <li class="filters-catalog-item">
-                  <label class="control">
-                    <input class="control-input" type="radio" name="hotel-type" value="apartment">
+                  <label class="control-checkbox">
+                    <input class="control-input-radio visually-hidden" type="radio" name="hotel-type" value="apartment">
+                    <span class="control-radio-alt"></span>
                     Апартаменты
                   </label>
                 </li>
@@ -128,13 +134,13 @@
               <legend class="filters-catalog-title">Стоимость, ₽:</legend>
               <div class="price-textfield-wrapper">
                 <label for="price-start" class="filters-catalog-control"></label>
-                <input class="control-input text-field" id="price-start" type="text" placeholder="от" value="0">
+                <input class="control-input price-field" id="price-start" type="number" placeholder="от" value="0">
                 <label for="price-end" class="filters-catalog-control"></label>
-                <input class="control-input text-field" id="price-end" type="text" placeholder="до" value="9000">
+                <input class="control-input price-field" id="price-end" type="number" placeholder="до" value="9000">
               </div>
               <!--слайдер цены-->
               <div class="price-range-slider">
-                <div class="price-min-max" style="left: 0; width: 226px;">
+                <div class="price-min-max" style="left: 0; right: 62px;">
                   <button class="price-toggle price-min" type="button"></button>
                   <button class="price-toggle price-max" type="button"></button>
                 </div>
