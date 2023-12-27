@@ -995,8 +995,7 @@ label[for="price-end"]::after {
 }
 
 .price-toggle:active {
-  border: 2px solid #82b3d3;
-  outline: none;
+  outline: 2px solid #82b3d3;
 }
 
 .button-filters {
