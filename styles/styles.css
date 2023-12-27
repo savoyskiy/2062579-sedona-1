@@ -19,6 +19,7 @@ html {
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -47,28 +48,22 @@ body {
 }
 
 /*тень для страницы слева*/
-.index-main::before,
-.catalog-main::before,
-.page-footer::before,
-.page-header::before {
+body::before {
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
+  left: 40px;
   height: 100%;
   width: 30px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
   z-index: -1;
 }
 /*тень для страницы справа*/
-.index-main::after,
-.catalog-main::after,
-.page-footer::after,
-.page-header::after {
+body::after {
   position: absolute;
   content: "";
   top: 0;
-  right: 0;
+  right: 40px;
   height: 100%;
   width: 30px;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
@@ -88,7 +83,6 @@ body {
 
 /*хедер*/
 .page-header {
-  position: relative;
   padding: 0 70px;
   background-color: #ffffff;
 }
@@ -247,7 +241,6 @@ body {
 
 /*футер*/
 .page-footer {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -361,13 +354,12 @@ body {
 }
 
 /*стили текста для главной страницы*/
-/*шапка index*/
+
 .index-main {
-  position: relative;
   flex-grow: 1;
   background-color: #ffffff;
 }
-
+/*шапка index*/
 .main-header {
   display: flex;
   flex-direction: column;
@@ -718,7 +710,6 @@ body {
 /*стили для страницы каталога*/
 /*фон по всей странице*/
 .catalog-main {
-  position: relative;
   flex-grow: 1;
   background-color: #ffffff;
 }
@@ -897,6 +888,7 @@ body {
 .price-field {
   position: absolute;
   width: 143px;
+  max-height: 48px;
   padding: 10px 48px 10px 18px;
   box-sizing: border-box;
   border: 2px solid transparent;
@@ -935,7 +927,7 @@ label[for="price-end"]::after {
 }
 
 .filters-catalog-group-price input:first-of-type {
-  left: 0;
+  left: -1px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -949,13 +941,13 @@ label[for="price-end"]::after {
   margin-bottom: 92px;
 }
 
-.price-field:focus {
-  border-color: #83b3d3;
-  outline: none;
+.price-field:hover {
+  background-color: #e6e6e6;
 }
 
-.price-field:focus-within {
-  border-color: #000000;
+.price-field:focus {
+  border: 3px solid #83b3d3;
+  background-color: #e6e6e6;
   outline: none;
 }
 
@@ -968,28 +960,31 @@ label[for="price-end"]::after {
 
 .price-min-max {
   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 4px;
   background-color: #ffffff;
 }
 
 .price-toggle {
-  position: absolute;
   width: 20px;
   height: 20px;
+  padding: 0;
   border-radius: 5px;
   border: 0;
+  box-sizing: content-box;
   cursor: pointer;
   background-color: #ffffff;
 }
 
-.price-min {
-  top: -8px;
-  left: 0;
+.price-toggle:focus {
+  border: 3px solid #83b3d3;
+  outline: none;
 }
 
-.price-max {
-  top: -8px;
-  right: 0;
+.price-toggle:active {
+  border: 2px solid #82b3d3;
 }
 
 .button-filters {
