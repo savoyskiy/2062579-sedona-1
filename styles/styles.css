@@ -860,7 +860,7 @@ body::after {
 }
 
 .control-input-checkbox:checked + .control-checkbox-alt {
-  background-image: url(../images/checkbox-checked.svg)
+  background-image: url(../images/checkbox-checked.svg);
 }
 
 .control-radio-alt {
@@ -877,6 +877,19 @@ body::after {
 
 .control-input-radio:checked + .control-radio-alt {
   background-image: url(../images/radio-tick.svg);
+}
+
+.control-checkbox:hover {
+  opacity: 0.6;
+}
+
+.control-checkbox:active {
+  opacity: 0.3;
+}
+
+.control-input-checkbox:focus-visible + .control-checkbox-alt,
+.control-input-radio:focus + .control-radio-alt {
+  outline: 3px solid #83b3d3;
 }
 
 .control-input {
@@ -945,10 +958,9 @@ label[for="price-end"]::after {
   background-color: #e6e6e6;
 }
 
-.price-field:focus {
-  border: 3px solid #83b3d3;
+.price-field:focus-visible {
+  outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
-  outline: none;
 }
 
 .price-range-slider {
@@ -978,13 +990,13 @@ label[for="price-end"]::after {
   background-color: #ffffff;
 }
 
-.price-toggle:focus {
-  border: 3px solid #83b3d3;
-  outline: none;
+.price-toggle:focus-visible {
+  outline: 3px solid #83b3d3;
 }
 
 .price-toggle:active {
   border: 2px solid #82b3d3;
+  outline: none;
 }
 
 .button-filters {
@@ -1086,7 +1098,7 @@ label[for="price-end"]::after {
 }
 
 .sorting-select:hover,
-.sorting-select:focus {
+.sorting-select:focus-visible {
   border-color: #68a2ca;
   outline: none;
 }
