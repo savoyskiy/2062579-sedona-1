@@ -1495,6 +1495,7 @@ label[for="price-end"]::after {
   background-image: url(../images/close-cross.svg);
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .close-modal:hover {
@@ -1614,18 +1615,47 @@ label[for="price-end"]::after {
   margin-right: 46px;
 }
 
-.modal-form-label.num-child::after {
+.modal-popover-button {
   position: absolute;
   top: -1px;
   right: -37px;
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  content: "";
+  border: none;
   background-image: url(../images/i-popup.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #83b3d3;
+  cursor: pointer;
+}
+
+.modal-popover-button:focus-visible {
+  outline: 3px solid #e6e6ee;
+}
+
+.modal-popover {
+  position: absolute;
+  top: 40px;
+  left: -56px;
+  width: 216px;
+  min-height: 105px;
+  padding: 20px 18px 18px 22px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #333333;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+}
+
+.modal-popover::before {
+  position: absolute;
+  top: -16px;
+  left: 118px;
+  content: url(../images/triangle-popover.svg);
 }
 
 .number-input::-webkit-outer-spin-button,
@@ -1650,6 +1680,7 @@ label[for="price-end"]::after {
   opacity: 0.3;
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .button-num-minus {
@@ -1722,14 +1753,20 @@ label[for="price-end"]::after {
   color: #333333;
 }
 
-/*класс для скрытия модалки, по умолчанию добавлен*/
+/*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
 /*.modal-hidden {
   display: none;
 }*/
 
-/*класс скрытия сообщений к полям модалки, по умолчанию добавлен*/
+/*класс скрытия сообщений к полям модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - сообщения скроются*/
 /*.message-hidden {
+  display: none;
+}*/
+
+/*класс скрытия поповера, по умолчанию добавлен в разметке*/
+/*если раскомментировать - поповер скроется*/
+/*.popover-hidden {
   display: none;
 }*/
