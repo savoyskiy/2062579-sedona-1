@@ -215,24 +215,29 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <label class="modal-form-label date-in" for="modal-date-in">Дата заезда:</label>
-            <input class="modal-date-input date-in" id="modal-date-in" type="date" placeholder="Укажите дату">
-            <span class="modal-error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
+            <div  class="modal-input-wrapper">
+              <input class="modal-date-input date-in" id="modal-date-in" type="date" placeholder="Укажите дату">
+              <span class="modal-error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
+            </div>
 
             <label class="modal-form-label date-out" for="modal-date-out">Дата выезда:</label>
-            <input class="modal-date-input date-out" id="modal-date-out" type="date" placeholder="Укажите дату">
-            <span class="modal-warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="modal-input-wrapper">
+              <input class="modal-date-input date-out" id="modal-date-out" type="date" placeholder="Укажите дату">
+              <span class="modal-warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
 
             <label class="modal-form-label num-adult" for="modal-num-adult">Взрослые:</label>
-            <div class="number-input-wrapper">
+            <div class="number-input-wrapper first-element">
               <button class="button-num-minus"></button>
               <input class="number-input num-adult" id="modal-num-adult" type="number" value="2">
               <button class="button-num-plus"></button>
             </div>
 
             <label class="modal-form-label num-child" for="modal-num-child">
-              Дети:
-              <button class="modal-tooltip-button"></button>
-              <span class="modal-tooltip tooltip-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              <span class="num-child-text">Дети:</span>
+              <button class="modal-tooltip-button">
+                <span class="modal-tooltip tooltip-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </button>
             </label>
             <div class="number-input-wrapper last-element">
               <button class="button-num-minus"></button>

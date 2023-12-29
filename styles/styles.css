@@ -1474,6 +1474,7 @@ label[for="price-end"]::after {
 }
 
 .modal-heading {
+  max-width: 420px;
   margin: 0 0 64px 0;
   padding: 0;
   font-size: 30px;
@@ -1515,7 +1516,7 @@ label[for="price-end"]::after {
 .modal-search-form {
   display: grid;
   grid-template-rows: repeat(4, auto);
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: 137px 111px 218px 111px;
   row-gap: 48px;
 }
 
@@ -1565,8 +1566,14 @@ label[for="price-end"]::after {
   outline: 2px solid #000000;
 }
 
+.modal-input-wrapper {
+  grid-column: 2 / -1;
+  position: relative;
+}
+
 .number-input-wrapper {
   display: flex;
+  align-self: start;
   width: 111px;
   box-sizing: border-box;
   align-items: center;
@@ -1575,7 +1582,14 @@ label[for="price-end"]::after {
   background-color: #f2f2f2;
 }
 
+.number-input-wrapper.first-element {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
 .number-input-wrapper.last-element {
+  grid-column: 4 / -1;
+  grid-row: 3 / 4;
   justify-self: end;
 }
 
@@ -1595,14 +1609,8 @@ label[for="price-end"]::after {
   outline: none;
 }
 
-.modal-form-label.num-child {
-  position: relative;
-  left: 2px;
-  justify-self: center;
-}
-
 .modal-form-label {
-  align-self: center;
+  padding-top: 12px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -1611,16 +1619,37 @@ label[for="price-end"]::after {
   text-transform: capitalize;
 }
 
+.modal-form-label.num-child {
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 77px;
+  position: relative;
+  width: auto;
+  justify-self: end;
+}
+
+.num-child-text {
+  width: 50px;
+  margin-right: 6px;
+  vertical-align: top;
+  text-align: right;
+}
+
 .modal-form-label.num-adult {
-  margin-right: 46px;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
 }
 
 .modal-tooltip-button {
   position: absolute;
-  top: -1px;
-  right: -37px;
+  top: 11px;
+  right: 46px;
   width: 26px;
   height: 26px;
+  padding: 0;
+  font-family: inherit;
   border-radius: 50%;
   border: none;
   background-image: url(../images/i-popup.svg);
@@ -1636,15 +1665,17 @@ label[for="price-end"]::after {
 
 .modal-tooltip {
   position: absolute;
-  top: 40px;
-  left: -56px;
+  top: 41px;
+  left: -115px;
   width: 216px;
   min-height: 105px;
   padding: 20px 18px 18px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  font-family: inherit;
   text-transform: none;
+  text-align: start;
   border-radius: 10px;
   color: #ffffff;
   background-color: #333333;
@@ -1737,19 +1768,18 @@ label[for="price-end"]::after {
 .modal-error-message,
 .modal-warning-message {
   position: absolute;
-  left: 227px;
+  top: 52px;
+  left: 20px;
   font-size: 16px;
   line-height: 21px;
   font-family: inherit;
 }
 
 .modal-error-message {
-  top: 216px;
   color: #ff5757;
 }
 
 .modal-warning-message {
-  top: 312px;
   color: #333333;
 }
 
