@@ -888,7 +888,7 @@ body::after {
 }
 
 .control-input-checkbox:focus-visible + .control-checkbox-alt,
-.control-input-radio:focus + .control-radio-alt {
+.control-input-radio:focus-visible + .control-radio-alt {
   outline: 3px solid #83b3d3;
 }
 
@@ -902,9 +902,9 @@ body::after {
   position: absolute;
   width: 143px;
   max-height: 48px;
-  padding: 10px 48px 10px 18px;
+  padding: 12px 48px 12px 18px;
   box-sizing: border-box;
-  border: 2px solid transparent;
+  border: none;
   background-color: #f2f2f2;
 }
 
@@ -956,6 +956,11 @@ label[for="price-end"]::after {
 
 .price-field:hover {
   background-color: #e6e6e6;
+}
+
+.price-field:focus:not(:focus-visible) {
+  outline: 2px solid #000000;
+  background-color: #f2f2f2;
 }
 
 .price-field:focus-visible {
@@ -1096,14 +1101,14 @@ label[for="price-end"]::after {
   appearance: none;
 }
 
+.sorting-select:focus:not(:focus-visible) {
+  border-color: #3f5e72;
+}
+
 .sorting-select:hover,
 .sorting-select:focus-visible {
   border-color: #68a2ca;
   outline: none;
-}
-
-.sorting-select:focus-within {
-  border-color: #3f5e72;
 }
 
 .sorting-select:disabled {
@@ -1447,3 +1452,284 @@ label[for="price-end"]::after {
   padding: 96px 258px 104px;
   background-color: #ffffff;
 }
+
+/*модальное окно*/
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-search-block {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+}
+
+.modal-heading {
+  margin: 0 0 64px 0;
+  padding: 0;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.close-modal {
+  position: absolute;
+  top: 64px;
+  right: 52px;
+  min-height: 52px;
+  min-width: 52px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: #f2f2f2;
+  background-image: url(../images/close-cross.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.close-modal:hover {
+  background-color: #e6e6e6;
+}
+
+.close-modal:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.close-modal:active {
+  background-color: #e6e6e6;
+  opacity: 0.3;
+}
+
+.modal-search-form {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
+  row-gap: 48px;
+}
+
+.modal-form-label.date-in {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.modal-form-label.date-out {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.modal-date-input.date-in,
+.modal-date-input.date-out {
+  grid-column: 2 / -1;
+  width: 440px;
+  height: 48px;
+  box-sizing: border-box;
+  justify-self: end;
+}
+
+.modal-date-input {
+  margin: 0;
+  padding: 12px 20px;
+  border: none;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000000;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.modal-date-input:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-date-input:focus-visible {
+  background-color: #e6e6e6;
+  outline: 3px solid #83b3d3;
+}
+
+.modal-date-input:focus:not(:focus-visible) {
+  background-color: #f2f2f2;
+  outline: 2px solid #000000;
+}
+
+.number-input-wrapper {
+  display: flex;
+  width: 111px;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 12px 10px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+}
+
+.number-input-wrapper.last-element {
+  justify-self: end;
+}
+
+.number-input {
+  width: 45px;
+  padding: 0;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.number-input:focus {
+  outline: none;
+}
+
+.modal-form-label.num-child {
+  position: relative;
+  left: 2px;
+  justify-self: center;
+}
+
+.modal-form-label {
+  align-self: center;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: inherit;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.modal-form-label.num-adult {
+  margin-right: 46px;
+}
+
+.modal-form-label.num-child::after {
+  position: absolute;
+  top: -1px;
+  right: -37px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  content: "";
+  background-image: url(../images/i-popup.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #83b3d3;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button,
+.modal-date-input::-webkit-outer-spin-button,
+.modal-date-input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.modal-date-input.date-in::-webkit-calendar-picker-indicator,
+.modal-date-input.date-out::-webkit-calendar-picker-indicator {
+  background-image: url(../images/calendar-icon.svg);
+  background-position: center;
+  opacity: 0.3;
+}
+
+.button-num-minus,
+.button-num-plus {
+  width: 20px;
+  height: 20px;
+  border: none;
+  opacity: 0.3;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button-num-minus {
+  margin-right: 3px;
+  background-image: url(../images/minus-icon.svg);
+}
+
+.button-num-plus {
+  margin-left: 3px;
+  background-image: url(../images/plus-icon.svg);
+}
+
+.button-num-minus:hover,
+.button-num-plus:hover {
+  opacity: 1;
+}
+
+.button-num-minus:focus-visible,
+.button-num-plus:focus-visible {
+  opacity: 1;
+  border-radius: 4px;
+  outline: 3px solid #83b3d3;
+}
+
+.button-num-minus:active,
+.button-num-plus:active {
+  opacity: 0.2;
+}
+
+.modal-form-button {
+  grid-column: 1 / -1;
+  width: 577px;
+  padding: 18px 77px;
+  font-size: 20px;
+  line-height: 24px;
+  border-radius: 10px;
+  font-family: inherit;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #83b3d3;
+  text-transform: uppercase;
+}
+
+.modal-form-button:hover,
+.modal-form-button:focus {
+  background-color: #68a2ca;
+  outline: none;
+}
+
+.modal-form-button:active {
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.modal-error-message,
+.modal-warning-message {
+  position: absolute;
+  left: 227px;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: inherit;
+}
+
+.modal-error-message {
+  top: 216px;
+  color: #ff5757;
+}
+
+.modal-warning-message {
+  top: 312px;
+  color: #333333;
+}
+
+/*класс для скрытия модалки, по умолчанию добавлен*/
+/*если раскомментировать - модальное окно скроется*/
+/*.modal-hidden {
+  display: none;
+}*/
+
+/*класс скрытия сообщений к полям модалки, по умолчанию добавлен*/
+/*если раскомментировать - сообщения скроются*/
+/*.message-hidden {
+  display: none;
+}*/
