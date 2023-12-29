@@ -1590,6 +1590,7 @@ label[for="price-end"]::after {
 .number-input-wrapper.last-element {
   grid-column: 4 / -1;
   grid-row: 3 / 4;
+  position: relative;
   justify-self: end;
 }
 
@@ -1645,7 +1646,7 @@ label[for="price-end"]::after {
 .modal-tooltip-button {
   position: absolute;
   top: 11px;
-  right: 46px;
+  right: 157px;
   width: 26px;
   height: 26px;
   padding: 0;
