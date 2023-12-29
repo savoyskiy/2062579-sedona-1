@@ -1485,6 +1485,9 @@ label[for="price-end"]::after {
 
 .close-modal {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 64px;
   right: 52px;
   min-height: 52px;
@@ -1493,7 +1496,6 @@ label[for="price-end"]::after {
   border: none;
   border-radius: 50%;
   background-color: #f2f2f2;
-  background-image: url(../images/close-cross.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1510,6 +1512,9 @@ label[for="price-end"]::after {
 
 .close-modal:active {
   background-color: #e6e6e6;
+}
+
+.close-modal:active path {
   opacity: 0.3;
 }
 
