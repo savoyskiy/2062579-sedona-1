@@ -76,7 +76,7 @@ body::after {
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   cursor: pointer;
   user-select: none;
 }
@@ -699,9 +699,9 @@ body::after {
 .subscribe-input {
   width: 412px;
   padding: 12px 20px;
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-family: inherit;
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
@@ -1039,7 +1039,6 @@ label[for="price-end"]::after {
   line-height: 20px;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
   cursor: pointer;
   background-color: transparent;
 }
@@ -1089,7 +1088,7 @@ label[for="price-end"]::after {
   width: 292px;
   padding: 12px 46px 12px 18px;
   margin-right: 70px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -1293,7 +1292,7 @@ label[for="price-end"]::after {
 
 .button-like {
   background-color: #82b3d3;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -1791,9 +1790,9 @@ label[for="price-end"]::after {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-/*.modal-hidden {
+.modal-hidden {
   display: none;
-}*/
+}
 
 /*класс скрытия сообщений к полям модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - сообщения скроются*/
@@ -1802,7 +1801,7 @@ label[for="price-end"]::after {
 }*/
 
 /*класс скрытия тултипа, по умолчанию добавлен в разметке*/
-/*если раскомментировать - поповер скроется*/
+/*если раскомментировать - тултип скроется*/
 /*.tooltip-hidden {
   display: none;
 }*/
