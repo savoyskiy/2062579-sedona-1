@@ -1670,6 +1670,7 @@ label[for="price-end"]::after {
 
 .modal-tooltip {
   position: absolute;
+  display: none;
   top: 41px;
   left: -115px;
   width: 216px;
@@ -1770,9 +1771,9 @@ label[for="price-end"]::after {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.modal-error-message,
-.modal-warning-message {
+.modal-date-message {
   position: absolute;
+  display: none;
   top: 52px;
   left: 20px;
   font-size: 16px;
@@ -1780,28 +1781,25 @@ label[for="price-end"]::after {
   font-family: inherit;
 }
 
-.modal-error-message {
+.error-message {
   color: #ff5757;
 }
 
-.modal-warning-message {
+.warning-message {
   color: #333333;
+}
+
+.modal-date-input:in-range ~ .warning-message,
+.modal-date-input:out-of-range ~ .error-message {
+  display: block;
+}
+
+input.modal-tooltip-button:checked + .modal-tooltip{
+  display: block;
 }
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-.modal-hidden {
-  display: none;
-}
-
-/*класс скрытия сообщений к полям модалки, по умолчанию добавлен в разметке*/
-/*если раскомментировать - сообщения скроются*/
-/*.message-hidden {
-  display: none;
-}*/
-
-/*класс скрытия тултипа, по умолчанию добавлен в разметке*/
-/*если раскомментировать - тултип скроется*/
-/*.tooltip-hidden {
+/*.modal-hidden {
   display: none;
 }*/

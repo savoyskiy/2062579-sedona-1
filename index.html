@@ -221,14 +221,16 @@
 
             <label class="modal-form-label date-in" for="modal-date-in">Дата заезда:</label>
             <div  class="modal-input-wrapper">
-              <input class="modal-date-input date-in" id="modal-date-in" type="date">
-              <span class="modal-error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
+              <input class="modal-date-input date-in" id="modal-date-in" type="date" value="2024-01-10" min="2023-12-01">
+              <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <label class="modal-form-label date-out" for="modal-date-out">Дата выезда:</label>
             <div class="modal-input-wrapper">
-              <input class="modal-date-input date-out" id="modal-date-out" type="date">
-              <span class="modal-warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
+              <input class="modal-date-input date-out" id="modal-date-out" type="date" value="2024-01-14" min="2023-12-01">
+              <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
+              <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <label class="modal-form-label num-adult" for="modal-num-adult">Взрослые:</label>
@@ -242,9 +244,10 @@
               <span class="num-child-text">Дети:</span>
             </label>
             <div class="number-input-wrapper last-element">
-              <button class="modal-tooltip-button">
-                <span class="modal-tooltip tooltip-hidden">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-              </button>
+              <label class="modal-tooltip-button">
+                <input class="modal-tooltip-button visually-hidden" type="checkbox">
+                <span class="modal-tooltip">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </label>
               <button class="button-num-minus"></button>
               <input class="number-input num-child" id="modal-num-child" type="number" value="2">
               <button class="button-num-plus"></button>
