@@ -707,6 +707,10 @@ body::after {
   border: none;
 }
 
+.subscribe-input:focus {
+  outline-color: #82b3d3;
+}
+
 /*стили для страницы каталога*/
 /*фон по всей странице*/
 .catalog-main {
@@ -1706,14 +1710,27 @@ label[for="price-end"]::after {
 .modal-date-input::-webkit-inner-spin-button {
   appearance: none;
 }
+/*убирает стрелочки в полях в Файрфокс*/
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
-.modal-date-input.date-in::-webkit-calendar-picker-indicator,
-.modal-date-input.date-out::-webkit-calendar-picker-indicator {
+.modal-date-input::placeholder {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.modal-input-wrapper::after {
   position: absolute;
-  right: 18px;
+  top: 16px;
+  right: 22px;
+  width: 16px;
+  height: 15px;
   background-image: url(../images/calendar-icon.svg);
   background-position: center;
   opacity: 0.3;
+  content: "";
+  z-index: 1;
 }
 
 .button-num-minus,
@@ -1780,7 +1797,6 @@ label[for="price-end"]::after {
 
 .modal-date-message {
   position: absolute;
-  display: none;
   top: 52px;
   left: 20px;
   font-size: 16px;
@@ -1796,9 +1812,9 @@ label[for="price-end"]::after {
   color: #333333;
 }
 
-.modal-date-input:in-range ~ .warning-message,
-.modal-date-input:out-of-range ~ .error-message {
-  display: block;
+/*класс для скрытия сообщений о датах в модалке*/
+.message-hidden {
+  display: none;
 }
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/

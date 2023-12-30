@@ -221,22 +221,22 @@
 
             <label class="modal-form-label date-in" for="modal-date-in">Дата заезда:</label>
             <div  class="modal-input-wrapper">
-              <input class="modal-date-input date-in" id="modal-date-in" type="date" value="2024-01-10" min="2023-12-01">
+              <input class="modal-date-input date-in" id="modal-date-in" type="text" placeholder="Укажите дату" value="27 апреля 2020">
               <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
-              <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
+              <span class="modal-date-message warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <label class="modal-form-label date-out" for="modal-date-out">Дата выезда:</label>
             <div class="modal-input-wrapper">
-              <input class="modal-date-input date-out" id="modal-date-out" type="date" value="2024-01-14" min="2023-12-01">
-              <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
+              <input class="modal-date-input date-out" id="modal-date-out" type="text" placeholder="Укажите дату" value="1 сентября 2023">
+              <span class="modal-date-message error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
               <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <label class="modal-form-label num-adult" for="modal-num-adult">Взрослые:</label>
             <div class="number-input-wrapper first-element">
               <button class="button-num-minus" type="button"></button>
-              <input class="number-input num-adult" id="modal-num-adult" type="number" value="2">
+              <input class="number-input num-adult" id="modal-num-adult" type="number" value="2" min="0">
               <button class="button-num-plus" type="button"></button>
             </div>
 
@@ -248,7 +248,7 @@
                 <span class="modal-tooltip" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
               </button>
               <button class="button-num-minus" type="button"></button>
-              <input class="number-input num-child" id="modal-num-child" type="number" value="2">
+              <input class="number-input num-child" id="modal-num-child" type="number" value="2" min="0">
               <button class="button-num-plus" type="button"></button>
             </div>
 
