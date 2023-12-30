@@ -202,6 +202,10 @@ body::after {
   opacity: 0.3;
 }
 
+.user-menu-link.disabled-link path{
+  fill: #e5e5e5;
+}
+
 .user-menu-icon {
   position: absolute;
   top: 0;
@@ -233,10 +237,6 @@ body::after {
 .user-menu-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.30);
-}
-
-.user-menu-button:disabled {
-  background-color: #e5e5e5;
 }
 
 /*футер*/
@@ -631,10 +631,6 @@ body::after {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.hotels-search-button:disabled {
-  background-color: #e5e5e5;
-}
-
 /*блок подписки*/
 .subscribe {
   display: flex;
@@ -692,10 +688,6 @@ body::after {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.button-subscribe:disabled {
-  background-color: #e5e5e5;
-}
-
 .subscribe-input {
   width: 412px;
   padding: 12px 20px;
@@ -705,6 +697,10 @@ body::after {
   background-color: #f2f2f2;
   border-radius: 4px 0 0 4px;
   border: none;
+}
+
+.subscribe-input:hover {
+  background-color: #e6e6e6;
 }
 
 .subscribe-input:focus {
@@ -1028,10 +1024,6 @@ label[for="price-end"]::after {
   color: rgba(255, 255, 255, 0.30);
 }
 
-.button-filters:disabled {
-  background-color: #e5e5e5;
-}
-
 .button-reset {
   margin-bottom: -2px;
   box-sizing: border-box;
@@ -1058,10 +1050,6 @@ label[for="price-end"]::after {
 
 .button-reset:active {
   color: rgba(255, 255, 255, 0.30);
-}
-
-.button-reset:disabled {
-  opacity: 0.1;
 }
 
 .catalog-hotels-wrapper {
@@ -1117,6 +1105,7 @@ label[for="price-end"]::after {
 .sorting-select:disabled {
   border-color: rgba(0, 0, 0, 0.30);
   color: rgba(0, 0, 0, 0.30);
+  cursor: auto;
 }
 
 .sorting-results {
@@ -1230,6 +1219,11 @@ label[for="price-end"]::after {
   color: rgba(0, 0, 0, 0.30);
 }
 
+.hotels-cards-link.disabled-link {
+  color: #000000;
+  opacity: 0.5;
+}
+
 .hotel-card-image {
   margin-bottom: 16px;
   object-fit: cover;
@@ -1313,6 +1307,7 @@ label[for="price-end"]::after {
 
 .button-like:disabled:not(.button-favourites) {
   background-color: #e5e5e5;
+  cursor: auto;
 }
 
 .rating-stars {
@@ -1383,6 +1378,7 @@ label[for="price-end"]::after {
 
 .button-favourites:disabled {
   background-color: #e5e5e5;
+  cursor: auto;
 }
 
 /*пагинация*/
@@ -1810,6 +1806,58 @@ input[type="number"] {
 
 .warning-message {
   color: #333333;
+}
+
+/*стили для disabled*/
+.button-all:disabled {
+  cursor: auto;
+  background-color: #e5e5e5;
+}
+
+.button-reset:disabled {
+  background-color: transparent;
+  opacity: 0.1;
+  cursor: auto;
+}
+
+.close-modal:disabled,
+.close-modal:disabled path,
+.modal-tooltip-button:disabled,
+.price-toggle:disabled,
+.price-toggle:disabled:active {
+  cursor: auto;
+  background-color: #e5e5e5;
+  outline: none;
+  fill: #e5e5e5;
+}
+
+.button-num-minus:disabled,
+.button-num-plus:disabled {
+  opacity: 0;
+  cursor: auto;
+}
+
+.modal-tooltip-button:disabled .modal-tooltip {
+  display: none;
+}
+
+.modal-date-input:disabled,
+.subscribe-input:disabled {
+  background-color: #e5e5e5;
+  color: rgba(0, 0, 0, 0.5);
+  opacity: 0.8;
+  outline: none;
+  cursor: auto;
+}
+
+.number-input:disabled {
+  opacity: 0.8;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.control-input-checkbox:disabled + .control-checkbox-alt,
+.control-input-radio:disabled + .control-radio-alt {
+	opacity: 0.3;
 }
 
 /*класс для скрытия сообщений о датах в модалке*/
