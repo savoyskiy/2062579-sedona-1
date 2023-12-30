@@ -1664,10 +1664,6 @@ label[for="price-end"]::after {
   cursor: pointer;
 }
 
-.modal-tooltip-button:focus-visible {
-  outline: 3px solid #e6e6ee;
-}
-
 .modal-tooltip {
   position: absolute;
   display: none;
@@ -1695,6 +1691,10 @@ label[for="price-end"]::after {
   content: url(../images/triangle-tooltip.svg);
 }
 
+.modal-tooltip-button:hover .modal-tooltip {
+  display: block;
+}
+
 .number-input::-webkit-outer-spin-button,
 .number-input::-webkit-inner-spin-button,
 .modal-date-input::-webkit-outer-spin-button,
@@ -1704,6 +1704,8 @@ label[for="price-end"]::after {
 
 .modal-date-input.date-in::-webkit-calendar-picker-indicator,
 .modal-date-input.date-out::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 18px;
   background-image: url(../images/calendar-icon.svg);
   background-position: center;
   opacity: 0.3;
@@ -1791,10 +1793,6 @@ label[for="price-end"]::after {
 
 .modal-date-input:in-range ~ .warning-message,
 .modal-date-input:out-of-range ~ .error-message {
-  display: block;
-}
-
-input.modal-tooltip-button:checked + .modal-tooltip{
   display: block;
 }
 
