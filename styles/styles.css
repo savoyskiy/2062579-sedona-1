@@ -1691,6 +1691,11 @@ label[for="price-end"]::after {
   content: url(../images/triangle-tooltip.svg);
 }
 
+.modal-tooltip-button:focus-visible {
+  outline: none
+}
+
+.modal-tooltip-button:focus-visible .modal-tooltip,
 .modal-tooltip-button:hover .modal-tooltip {
   display: block;
 }
