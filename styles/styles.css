@@ -244,7 +244,6 @@ body::after {
 /*футер*/
 .page-footer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding: 40px 70px 30px;
   background-color: #ffffff;
@@ -305,6 +304,7 @@ body::after {
 }
 
 .footer-contact {
+  max-width: 331px;
   padding: 5px 195px;
 }
 
@@ -603,6 +603,7 @@ body::after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .hotels-text {
@@ -651,6 +652,7 @@ body::after {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .subscribe-text {
@@ -670,6 +672,7 @@ body::after {
 }
 
 .button-subscribe {
+  max-width: 232px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -828,6 +831,18 @@ body::after {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
+}
+
+.filters-catalog-group-infrastructure .filters-catalog-title {
+  max-width: 151px;
+}
+
+.filters-catalog-group-type .filters-catalog-title {
+  max-width: 250px;
+}
+
+.filters-catalog-group-price .filters-catalog-title {
+  max-width: 288px;
 }
 
 .filters-catalog-list {
@@ -1075,16 +1090,22 @@ label[for="price-end"]::after {
 .catalog-sorting {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   margin-bottom: 40px;
 }
 
 .sorting-results {
   flex-grow: 1;
+  align-self: center;
+  width: 338px;
   margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .sorting-select {
+  align-self: flex-start;
   width: 292px;
   padding: 12px 46px 12px 18px;
   margin-right: 70px;
@@ -1114,13 +1135,6 @@ label[for="price-end"]::after {
   border-color: rgba(0, 0, 0, 0.30);
   color: rgba(0, 0, 0, 0.30);
   cursor: auto;
-}
-
-.sorting-results {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-transform: uppercase;
 }
 
 .catalog-display-list {
@@ -1716,6 +1730,7 @@ label[for="price-end"]::after {
 .modal-date-input::-webkit-inner-spin-button {
   appearance: none;
 }
+
 /*убирает стрелочки в полях в Файрфокс*/
 input[type="number"] {
   -moz-appearance: textfield;
@@ -1878,7 +1893,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-/*.modal-hidden {
+.modal-hidden {
   display: none;
 }
-*/
