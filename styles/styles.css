@@ -131,9 +131,10 @@ body::after {
 }
 
 .header-logo:focus,
-.navigation-link:focus:not(.current-page) {
+.navigation-link:focus-visible:not(.current-page) {
   color: #68a2ca;
-  outline-color: #68a2ca;
+  outline: 2px solid #68a2ca;
+  border-radius: 0 0 4px 4px;
 }
 
 .navigation-link:active:not(.current-page) {
@@ -194,8 +195,9 @@ body::after {
   fill: #82b3d3;
 }
 
-.user-menu-link:focus{
-  outline-color: #68a2ca;
+.user-menu-link:focus-visible{
+  outline: 2px solid #68a2ca;
+  border-radius: 0 0 4px 4px;
 }
 
 .user-menu-link:active {
@@ -704,7 +706,7 @@ body::after {
 }
 
 .subscribe-input:focus {
-  outline-color: #82b3d3;
+  outline: 2px solid #82b3d3;
 }
 
 /*стили для страницы каталога*/
@@ -958,14 +960,20 @@ label[for="price-end"]::after {
   background-color: #e6e6e6;
 }
 
-.price-field:focus:not(:focus-visible) {
-  outline: 2px solid #000000;
-  background-color: #f2f2f2;
+.price-field::placeholder {
+  color: #000000;
 }
 
-.price-field:focus-visible {
+.price-field:placeholder-shown:focus {
+  border: none;
   outline: 3px solid #83b3d3;
   background-color: #e6e6e6;
+}
+
+.price-field:focus {
+  outline: none;
+  border: 2px solid #000000;
+  background-color: #f2f2f2;
 }
 
 .price-range-slider {
@@ -1560,14 +1568,16 @@ label[for="price-end"]::after {
   background-color: #e6e6e6;
 }
 
-.modal-date-input:focus-visible {
+.modal-date-input:placeholder-shown:focus {
   background-color: #e6e6e6;
+  border: none;
   outline: 3px solid #83b3d3;
 }
 
-.modal-date-input:focus:not(:focus-visible) {
+.modal-date-input:focus {
   background-color: #f2f2f2;
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
+  outline: none;
 }
 
 .modal-input-wrapper {
@@ -1861,6 +1871,7 @@ input[type="number"] {
 }
 
 /*класс для скрытия сообщений о датах в модалке*/
+/*удаляется/навешивается через js*/
 .message-hidden {
   display: none;
 }
@@ -1869,4 +1880,5 @@ input[type="number"] {
 /*если раскомментировать - модальное окно скроется*/
 /*.modal-hidden {
   display: none;
-}*/
+}
+*/

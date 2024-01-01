@@ -136,9 +136,9 @@
               <legend class="filters-catalog-title">Стоимость, ₽:</legend>
               <div class="price-textfield-wrapper">
                 <label for="price-start" class="filters-catalog-control"></label>
-                <input class="control-input price-field" id="price-start" type="number" value="0" min="0">
+                <input class="control-input price-field" id="price-start" type="number" min="0" placeholder="0">
                 <label for="price-end" class="filters-catalog-control"></label>
-                <input class="control-input price-field" id="price-end" type="number" value="9000" min="0">
+                <input class="control-input price-field" id="price-end" type="number" min="0" placeholder="9000">
               </div>
               <!--слайдер цены-->
               <div class="price-range-slider">
@@ -286,7 +286,7 @@
         <p class="subscribe-text">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="into-subscribe-email">Поле ввода е-мейл</label>
-          <input class="subscribe-input" id="into-subscribe-email" type="email" placeholder="Ваш e-mail" name="subscribe-email">
+          <input class="subscribe-input" id="into-subscribe-email" type="email" placeholder="Ваш e-mail" name="subscribe-email" required>
           <button class="button-all button-subscribe" type="submit">Подписаться</button>
         </form>
       </aside>
