@@ -293,6 +293,7 @@ body::after {
 .social-link:focus {
   outline: none;
 }
+
 .social-link:hover path,
 .social-link:focus path {
   fill: #68a2ca;
@@ -426,10 +427,6 @@ body::after {
   list-style-type: none;
 }
 
-.advantages-heading {
-  position: relative;
-}
-
 .advantages-heading::after {
   position: absolute;
   bottom: -30px;
@@ -497,6 +494,7 @@ body::after {
 }
 
 .advantages-heading {
+  position: relative;
   margin: 0 0 62px;
   text-align: center;
   font-weight: 700;
@@ -871,13 +869,13 @@ body::after {
   left: 0;
   width: 20px;
   height: 20px;
-  background-image: url(../images/checkbox-empty.svg);
+  background-image: url("../images/checkbox-empty.svg");
   background-color: #ffffff;
   border-radius: 4px;
 }
 
 .control-input-checkbox:checked + .control-checkbox-alt {
-  background-image: url(../images/checkbox-checked.svg);
+  background-image: url("../images/checkbox-checked.svg");
 }
 
 .control-radio-alt {
@@ -886,14 +884,14 @@ body::after {
   left: 0;
   width: 20px;
   height: 20px;
-  background-image: url(../images/radio-empty.svg);
+  background-image: url("../images/radio-empty.svg");
   background-position: center;
   background-color: #ffffff;
   border-radius: 50%;
 }
 
 .control-input-radio:checked + .control-radio-alt {
-  background-image: url(../images/radio-tick.svg);
+  background-image: url("../images/radio-tick.svg");
 }
 
 .control-checkbox:hover {
@@ -1361,6 +1359,7 @@ label[for="price-end"]::after {
 }
 
 .button-rating {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -1377,10 +1376,6 @@ label[for="price-end"]::after {
 
 .hotel-price {
   justify-self: end;
-}
-
-.button-rating {
-  margin: 0;
 }
 
 .button-favourites {
@@ -1681,7 +1676,7 @@ label[for="price-end"]::after {
   font-family: inherit;
   border-radius: 50%;
   border: none;
-  background-image: url(../images/i-popup.svg);
+  background-image: url("../images/i-popup.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #83b3d3;
@@ -1712,7 +1707,7 @@ label[for="price-end"]::after {
   position: absolute;
   top: -16px;
   left: 118px;
-  content: url(../images/triangle-tooltip.svg);
+  content: url("../images/triangle-tooltip.svg");
 }
 
 .modal-tooltip-button:focus-visible {
@@ -1747,7 +1742,7 @@ input[type="number"] {
   right: 22px;
   width: 16px;
   height: 15px;
-  background-image: url(../images/calendar-icon.svg);
+  background-image: url("../images/calendar-icon.svg");
   background-position: center;
   opacity: 0.3;
   content: "";
@@ -1767,12 +1762,12 @@ input[type="number"] {
 
 .button-num-minus {
   margin-right: 3px;
-  background-image: url(../images/minus-icon.svg);
+  background-image: url("../images/minus-icon.svg");
 }
 
 .button-num-plus {
   margin-left: 3px;
-  background-image: url(../images/plus-icon.svg);
+  background-image: url("../images/plus-icon.svg");
 }
 
 .button-num-minus:hover,
