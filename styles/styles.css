@@ -386,6 +386,7 @@ body {
 
 .background-images-wrapper img {
   margin: 51px auto;
+  object-fit: contain;
 }
 
 /*секция преимуществ*/
@@ -710,7 +711,7 @@ body {
   padding: 35px 70px 70px;
   background-color: #82b3d3;
   background-image: url("../images/catalog-filter-background.jpg");
-  background-repeat: round;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -783,31 +784,61 @@ body {
 
 /*фильтр гостиниц*/
 .filters-catalog-form {
+  display: grid;
+  grid-template-columns: 221px auto 358px 191px;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-areas:
+    "infrastructure type price ."
+    "checkbox radio slider button";
+}
+
+.filters-infrustructure-title {
+  grid-area: infrastructure;
+  margin: 0;
+  padding: 0 0 32px 0;
+  font-family: inherit;
+}
+
+.filters-catalog-group-infrastructure {
+  grid-area: checkbox;
+  width: 151px;
+  margin-right: 70px;
+}
+
+.filters-catalog-group-type {
+  grid-area: radio;
+}
+
+.filters-type-title {
+  grid-area: type;
+  margin: 0;
+  padding: 0 0 32px 0;
+}
+
+.filters-price-title {
+  grid-area: price;
+  margin: 0;
+  padding: 0 0 32px 0;
+}
+
+.filters-catalog-group-price {
+  grid-area: slider;
+  width: 288px;
+  margin-right: 70px;
+}
+
+.filters-button-wrapper {
+  grid-area: button;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: start;
+  width: 191px;
 }
 
 .filters-catalog-group {
   margin: 0;
   padding: 0;
   border: none;
-}
-
-.filters-catalog-group-infrastructure {
-  width: 151px;
-}
-
-.filters-catalog-group-price {
-  width: 288px;
-}
-
-.filters-catalog-group-price,
-.filters-catalog-group-infrastructure {
-  margin-right: 70px;
-}
-
-.filters-catalog-group-type {
-  flex-grow: 1;
 }
 
 .filters-catalog-title {
@@ -817,18 +848,6 @@ body {
   font-size: 20px;
   line-height: 24px;
   text-transform: capitalize;
-}
-
-.filters-catalog-group-infrastructure .filters-catalog-title {
-  max-width: 151px;
-}
-
-.filters-catalog-group-type .filters-catalog-title {
-  max-width: 250px;
-}
-
-.filters-catalog-group-price .filters-catalog-title {
-  max-width: 288px;
 }
 
 .filters-catalog-list {
@@ -944,7 +963,6 @@ label[for="price-end"]::after {
 }
 
 .filters-catalog-group-price input:first-of-type {
-  left: -1px;
   border-radius: 4px 0 0 4px;
 }
 
@@ -963,7 +981,12 @@ label[for="price-end"]::after {
 }
 
 .price-field::placeholder {
+  position: relative;
+  left: 3px;
   color: #000000;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .price-field:placeholder-shown:focus {
@@ -1064,14 +1087,6 @@ label[for="price-end"]::after {
 
 .catalog-hotels-wrapper {
   padding: 50px 70px 61px;
-}
-
-.filters-button-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  width: 191px;
-  padding-top: 56px;
 }
 
 /*секция сортировки*/
@@ -1407,8 +1422,8 @@ label[for="price-end"]::after {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   box-sizing: border-box;
   font-weight: 700;
   font-size: 20px;
@@ -1896,6 +1911,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-/*.modal-hidden {
+.modal-hidden {
   display: none;
-}*/
+}

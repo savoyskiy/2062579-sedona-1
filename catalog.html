@@ -77,8 +77,9 @@
           <h2 class="visually-hidden">Фильтры гостиниц</h2>
           <form class="filters-catalog-form" action="https://echo.htmlacademy.ru/" method="get">
             <!--чекбоксы инфраструктуры-->
+            <h3 class="filters-catalog-title filters-infrustructure-title" aria-hidden="true">Инфраструктура:</h3>
             <fieldset class="filters-catalog-group filters-catalog-group-infrastructure">
-              <legend class="filters-catalog-title">Инфраструктура:</legend>
+              <legend class="filters-catalog-title visually-hidden">Инфраструктура:</legend>
               <ul class="filters-catalog-list">
                 <li class="filters-catalog-item">
                   <label class="control-checkbox">
@@ -105,8 +106,9 @@
             </fieldset>
 
             <!--радиокнопки типа жилья-->
+            <h3 class="filters-catalog-title filters-type-title" aria-hidden="true">Тип жилья:</h3>
             <fieldset class="filters-catalog-group filters-catalog-group-type">
-              <legend class="filters-catalog-title">Тип жилья:</legend>
+              <legend class="filters-catalog-title visually-hidden">Тип жилья:</legend>
               <ul class="filters-catalog-list">
                 <li class="filters-catalog-item">
                   <label class="control-checkbox">
@@ -133,8 +135,9 @@
             </fieldset>
 
             <!--диапазон цены-->
+            <h3 class="filters-catalog-title filters-price-title" aria-hidden="true">Стоимость, ₽:</h3>
             <fieldset class="filters-catalog-group filters-catalog-group-price">
-              <legend class="filters-catalog-title">Стоимость, ₽:</legend>
+              <legend class="filters-catalog-title visually-hidden">Стоимость, ₽:</legend>
               <div class="price-textfield-wrapper">
                 <label for="price-start" class="filters-catalog-control"></label>
                 <input class="control-input price-field" id="price-start" type="number" name="start-price" min="0" placeholder="0" required>
