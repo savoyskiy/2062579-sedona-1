@@ -1094,9 +1094,8 @@ label[for="price-end"]::after {
 
 .sorting-results {
   flex-grow: 1;
-  align-self: center;
   width: 338px;
-  margin: 0;
+  margin: 7px 0 0 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
