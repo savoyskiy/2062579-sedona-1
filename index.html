@@ -221,26 +221,28 @@
           <form class="modal-search-form" action="https://echo.htmlacademy.ru/" method="get">
 
             <label class="modal-form-label date-in" for="modal-date-in">Дата заезда:</label>
-            <div  class="modal-input-wrapper">
+            <div  class="modal-input-wrapper-in">
               <input class="modal-date-input date-in" id="modal-date-in" name="visit-date-in" type="text" placeholder="Укажите дату" value="27 апреля 2020" required>
               <button class="calendar-button" type="button"></button>
+              <div class="date-in-messages-wrapper">
+                <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
+                <span class="modal-date-message warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
             </div>
 
-            <div class="date-in-messages-wrapper">
-              <span class="modal-date-message error-message">Мы не можем отправить вас в прошлое.</span>
-              <span class="modal-date-message warning-message message-hidden">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
+
 
             <label class="modal-form-label date-out" for="modal-date-out">Дата выезда:</label>
-            <div class="modal-input-wrapper">
+            <div class="modal-input-wrapper-out">
               <input class="modal-date-input date-out" id="modal-date-out" name="visit-date-out" type="text" placeholder="Укажите дату" value="1 сентября 2023" required>
               <button class="calendar-button" type="button"></button>
+              <div class="date-out-messages-wrapper">
+                <span class="modal-date-message error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
+                <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
             </div>
 
-            <div class="date-out-messages-wrapper">
-              <span class="modal-date-message error-message message-hidden">Мы не можем отправить вас в прошлое.</span>
-              <span class="modal-date-message warning-message">На эти даты есть свободные номера. Пока есть.</span>
-            </div>
+
 
             <label class="modal-form-label num-adult" for="modal-num-adult">Взрослые:</label>
             <div class="number-input-wrapper first-element">
