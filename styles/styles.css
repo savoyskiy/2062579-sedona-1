@@ -434,9 +434,10 @@ body {
 }
 
 .advantages-item-edge img {
-  object-fit: cover;
-  max-width: 100%;
-  height: 100%;
+  object-fit: contain;
+  max-width: 800px;
+  max-height: 385px;
+  background-color: #3f5e72;
 }
 
 .advantages-bottom-block {
