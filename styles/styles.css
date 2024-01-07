@@ -129,6 +129,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  max-width: 268px;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style-type: none;
@@ -703,7 +705,7 @@ body {
 .catalog-header {
   min-height: 307px;
   padding: 35px 70px 70px;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
   background-image: url("../images/catalog-filter-background.jpg");
   background-size: cover;
   color: #ffffff;
@@ -1137,18 +1139,13 @@ label[for="price-end"]::after {
 }
 
 .catalog-display-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+  width: 160px;
   margin: 0;
   padding: 0;
   list-style-type: none;
-}
-
-.catalog-display-item {
-  margin-right: 8px;
-}
-
-.catalog-display-item:last-child {
-  margin-right: 0;
 }
 
 .catalog-display-button {
@@ -1919,6 +1916,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-/*.modal-hidden {
+.modal-hidden {
   display: none;
-}*/
+}
