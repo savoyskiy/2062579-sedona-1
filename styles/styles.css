@@ -879,8 +879,12 @@ body {
   border-radius: 4px;
 }
 
-.control-input-checkbox:checked + .control-checkbox-alt {
-  background-image: url("../images/checkbox-checked.svg");
+.control-input-checkbox + .control-checkbox-alt svg {
+  display: none;
+}
+
+.control-input-checkbox:checked + .control-checkbox-alt svg {
+  display: block;
 }
 
 .control-radio-alt {
@@ -894,8 +898,12 @@ body {
   border-radius: 50%;
 }
 
-.control-input-radio:checked + .control-radio-alt {
-  background-image: url("../images/radio-checked.svg");
+.control-input-radio + .control-radio-alt svg {
+  display: none;
+}
+
+.control-input-radio:checked + .control-radio-alt svg {
+  display: block;
 }
 
 .control-checkbox:hover {
