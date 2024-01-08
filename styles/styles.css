@@ -434,10 +434,10 @@ body {
 }
 
 .advantages-item-edge img {
+  align-self: center;
   object-fit: contain;
-  max-width: 800px;
-  max-height: 385px;
-  background-color: #3f5e72;
+  max-width: 100%;
+  background-color: #68a2ca;
 }
 
 .advantages-bottom-block {
@@ -1226,6 +1226,10 @@ label[for="price-end"]::after {
   color: #68a2ca;
 }
 
+.hotels-cards-link:hover .hotel-card-image {
+  background-color: #68a2ca;
+}
+
 .hotels-cards-link:focus {
   color: #68a2ca;
   outline-color: #68a2ca;
@@ -1245,7 +1249,7 @@ label[for="price-end"]::after {
   margin-bottom: 16px;
   object-fit: cover;
   width: 100%;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
 }
 
 .hotel-card-heading {
