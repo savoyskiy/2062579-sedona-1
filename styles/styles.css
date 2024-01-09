@@ -380,7 +380,7 @@ body {
   flex-wrap: wrap;
   width: 100%;
   min-height: 485px;
-  background-color: #82b3d3;
+  background-color: #3f5e72;
   background-image: url("../images/index-bottom-background.svg"),
     url("../images/index-background.jpg");
   background-position: left bottom;
@@ -435,9 +435,9 @@ body {
 
 .advantages-item-edge img {
   align-self: center;
-  object-fit: contain;
-  max-width: 100%;
-  background-color: #68a2ca;
+  object-fit: cover;
+  width: 100%;
+  background-color: #82b3d3;
 }
 
 .advantages-bottom-block {
@@ -446,6 +446,7 @@ body {
 
 .advantages-item-edge-text {
   display: flex;
+  flex-shrink: 0;
   justify-content: center;
   align-items: center;
   width: 400px;
@@ -908,6 +909,7 @@ body {
 
 .control-checkbox:hover {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .control-checkbox:active {
@@ -1593,7 +1595,8 @@ label[for="price-end"]::after {
 
 .modal-date-input:placeholder-shown:focus {
   background-color: #e6e6e6;
-  border: none;
+  border: 2px solid transparent;
+  box-sizing: border-box;
   outline: 3px solid #83b3d3;
 }
 
@@ -1701,11 +1704,14 @@ label[for="price-end"]::after {
   font-family: inherit;
   border-radius: 50%;
   border: none;
-  background-image: url("../images/i-popup.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   background-color: #83b3d3;
   cursor: pointer;
+}
+
+.modal-tooltip-button svg {
+  position: absolute;
+  top: 7px;
+  right: 12px;
 }
 
 .modal-tooltip {
@@ -1767,35 +1773,47 @@ input[type="number"] {
   right: 22px;
   width: 16px;
   height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
   border: none;
   box-sizing: border-box;
   cursor: pointer;
-  background-image: url("../images/calendar-icon.svg");
-  background-position: center;
   opacity: 0.3;
-  content: "";
-  z-index: 1;
+  /*z-index: 1;*/
 }
 
 .button-num-minus,
 .button-num-plus {
+  position: relative;
   width: 20px;
   height: 20px;
   border: none;
   opacity: 0.3;
-  background-position: center;
-  background-repeat: no-repeat;
   cursor: pointer;
+}
+
+.button-num-minus svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -1px);
+}
+
+.button-num-plus svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .button-num-minus {
   margin-right: 3px;
-  background-image: url("../images/minus-icon.svg");
 }
 
 .button-num-plus {
   margin-left: 3px;
-  background-image: url("../images/plus-icon.svg");
 }
 
 .calendar-button:hover,
@@ -1926,6 +1944,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-.modal-hidden {
+/*.modal-hidden {
   display: none;
-}
+}*/
