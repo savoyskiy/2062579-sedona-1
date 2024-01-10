@@ -1595,7 +1595,7 @@ label[for="price-end"]::after {
 .modal-date-input {
   margin: 0;
   padding: 12px 20px;
-  border: none;
+  border: 2px solid transparent;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1611,14 +1611,14 @@ label[for="price-end"]::after {
 
 .modal-date-input:placeholder-shown:focus {
   background-color: #e6e6e6;
-  border: 2px solid transparent;
+  border-color: transparent;
   box-sizing: border-box;
   outline: 3px solid #83b3d3;
 }
 
 .modal-date-input:focus {
   background-color: #f2f2f2;
-  border: 2px solid #000000;
+  border-color: #000000;
   outline: none;
 }
 
@@ -1959,6 +1959,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-.modal-hidden {
+/*.modal-hidden {
   display: none;
-}
+}*/
