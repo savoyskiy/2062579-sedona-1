@@ -1452,6 +1452,21 @@ label[for="price-end"]::after {
   color: rgba(255, 255, 255, 0.30);
 }
 
+.button-null:hover {
+  border-radius: 4px;
+  background-color: #e6e6e6;
+}
+
+.button-null:focus-visible {
+  border-radius: 4px;
+  border: 2px solid #82b3d3;
+  outline: none;
+}
+
+.button-null:active {
+  opacity: 0.3;
+}
+
 .catalog-pagination-item {
   border-radius: 4px;
   background-color: #82b3d3;
@@ -1943,6 +1958,6 @@ input[type="number"] {
 
 /*класс для скрытия модалки, по умолчанию добавлен в разметке*/
 /*если раскомментировать - модальное окно скроется*/
-.modal-hidden {
+/*.modal-hidden {
   display: none;
-}
+}*/
