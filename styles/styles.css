@@ -1675,8 +1675,9 @@ label[for="price-end"]::after {
   background-color: #f2f2f2;
 }
 
-.number-input:focus {
-  outline: none;
+.number-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
 }
 
 .modal-form-label {
