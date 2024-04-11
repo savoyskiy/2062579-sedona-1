@@ -33,7 +33,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -177,7 +177,7 @@ body {
   fill: #82b3d3;
 }
 
-.user-menu-link:focus-visible{
+.user-menu-link:focus-visible {
   outline: 2px solid #68a2ca;
   border-radius: 0 0 4px 4px;
 }
@@ -186,7 +186,7 @@ body {
   opacity: 0.3;
 }
 
-.user-menu-link.disabled-link path{
+.user-menu-link.disabled-link path {
   fill: #e5e5e5;
   cursor: default;
 }
@@ -221,7 +221,7 @@ body {
 
 .user-menu-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*футер*/
@@ -419,12 +419,12 @@ body {
   margin-left: -30px;
   width: 60px;
   height: 2px;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.3);
   content: "";
 }
 
 .advantages-item-edge-text .advantages-heading::after {
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .advantages-item-edge {
@@ -611,7 +611,7 @@ body {
 
 .hotels-search-button:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /*блок подписки*/
@@ -670,7 +670,7 @@ body {
 
 .button-subscribe:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .subscribe-input {
@@ -762,9 +762,9 @@ body {
 }
 
 .breadcrumbs-link:hover,
-.breadcrumbs-link:hover path  {
-  color: rgba(255, 255, 255, 0.60);
-  fill: rgba(255, 255, 255, 0.60);
+.breadcrumbs-link:hover path {
+  color: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:focus,
@@ -776,8 +776,8 @@ body {
 
 .breadcrumbs-link:active,
 .breadcrumbs-link:active path {
-  color: rgba(255, 255, 255, 0.30);
-  fill: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .breadcrumbs-item:last-child .breadcrumbs-link {
@@ -1016,7 +1016,7 @@ body {
   position: relative;
   width: 287px;
   height: 4px;
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .price-min-max {
@@ -1065,7 +1065,7 @@ body {
 
 .button-filters:active {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -1093,7 +1093,7 @@ body {
 }
 
 .button-reset:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-hotels-wrapper {
@@ -1146,8 +1146,8 @@ body {
 }
 
 .sorting-select:disabled {
-  border-color: rgba(0, 0, 0, 0.30);
-  color: rgba(0, 0, 0, 0.30);
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   cursor: auto;
 }
 
@@ -1225,7 +1225,7 @@ body {
 }
 
 .hotels-cards-link {
-  grid-column: 1 / -1 ;
+  grid-column: 1 / -1;
   display: block;
   line-height: 0;
   text-decoration: none;
@@ -1251,7 +1251,7 @@ body {
 }
 
 .hotels-cards-link:active {
-  color: rgba(0, 0, 0, 0.30);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .hotels-cards-link.disabled-link {
@@ -1317,7 +1317,7 @@ body {
 
 .hotel-card-link:active {
   background-color: #756157;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-card-link.disabled-link {
@@ -1339,7 +1339,7 @@ body {
 
 .button-like:active:not(.button-favourites) {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-like:disabled:not(.button-favourites) {
@@ -1407,7 +1407,7 @@ body {
 
 .button-favourites:active {
   background-color: #7db54f;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-favourites:disabled {
@@ -1454,7 +1454,7 @@ body {
 
 .catalog-pagination-item .catalog-pagination-link:active:not(.link-disabled):not(.button-null) {
   background-color: #82b3d3;
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-null:hover {
@@ -1571,7 +1571,7 @@ body {
 
 .modal-search-form {
   display: grid;
-  grid-template-rows:  repeat(4, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-columns: 137px 111px 218px 111px;
   grid-template-areas:
     "ldi idi idi idi"
@@ -1752,7 +1752,7 @@ body {
   border-radius: 10px;
   color: #ffffff;
   background-color: #333333;
-  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .modal-tooltip::before {
@@ -1763,7 +1763,7 @@ body {
 }
 
 .modal-tooltip-button:focus-visible {
-  outline: none
+  outline: none;
 }
 
 .modal-tooltip-button:focus-visible .modal-tooltip,
@@ -1884,7 +1884,7 @@ body {
 }
 
 .modal-form-button:active {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal-date-message {
@@ -1954,7 +1954,7 @@ body {
 
 .control-input-checkbox:disabled + .control-checkbox-alt,
 .control-input-radio:disabled + .control-radio-alt {
-	opacity: 0.3;
+  opacity: 0.3;
 }
 
 /*класс для скрытия сообщений о датах в модалке*/
