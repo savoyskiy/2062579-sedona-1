@@ -1781,7 +1781,7 @@ body {
 /*убирает стрелочки в полях в Файрфокс*/
 .number-input,
 .price-field {
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .modal-date-input::placeholder {
